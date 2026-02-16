@@ -1,5 +1,6 @@
 
 import React, { useEffect } from 'react';
+import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import TrustStrip from './components/TrustStrip';
 import SolutionOverview from './components/SolutionOverview';
@@ -37,6 +38,7 @@ const App: React.FC = () => {
 
   return (
     <div className="overflow-x-hidden">
+      <Navbar />
       <style>{`
         .reveal {
           opacity: 0;
@@ -86,7 +88,7 @@ const App: React.FC = () => {
       <Hero />
       <TrustStrip />
       <SolutionOverview />
-      <PainCards />
+      {/* <PainCards /> */}
       <Workflow />
       <ServicesGrid />
       <CaseStudies />

@@ -40,25 +40,25 @@ const PainCards: React.FC = () => {
       </div>
 
       <div className="max-content">
-        <div className="text-center mb-16 reveal">
-          <h2 className="text-3xl lg:text-4xl font-extrabold text-slate-900 mb-4">
+        <div className="text-center mb-12 sm:mb-16 reveal">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-3 sm:mb-4 px-4 sm:px-0">
             Scaling AI Fails When Annotation Workflows <br className="hidden md:block" />
             Cannot Keep Up
           </h2>
-          <p className="text-slate-500 font-medium">Identify the bottlenecks preventing your models from reaching deployment.</p>
+          <p className="text-slate-500 font-medium text-sm sm:text-base px-4 sm:px-0">Identify the bottlenecks preventing your models from reaching deployment.</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {painPoints.map((point, index) => (
-            <div 
-              key={index} 
-              className="reveal p-8 bg-white rounded-2xl border border-slate-100 shadow-sm transition-all"
+            <div
+              key={index}
+              className="reveal p-6 sm:p-8 bg-white rounded-2xl border border-slate-100 shadow-sm transition-all"
               style={{ transitionDelay: `${index * 0.1}s` }}
             >
               <div className="mb-6">
                 {point.icon}
               </div>
-              <h3 className="text-lg font-bold text-slate-900 mb-4 leading-tight">
+              <h3 className="text-base sm:text-lg font-bold text-slate-900 mb-3 sm:mb-4 leading-tight">
                 {point.heading}
               </h3>
               <p className="text-sm text-slate-600 leading-relaxed">

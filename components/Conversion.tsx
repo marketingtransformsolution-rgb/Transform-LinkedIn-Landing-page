@@ -12,7 +12,7 @@ const Conversion: React.FC = () => {
   };
 
   return (
-    <section className="py-32 conversion-light relative overflow-hidden">
+    <section className="py-16 sm:py-24 lg:py-32 conversion-light relative overflow-hidden">
       {/* Subtle technical background elements in margins */}
       <div className="absolute top-10 left-[10%] opacity-10 pointer-events-none hidden lg:block">
         <svg width="120" height="120" viewBox="0 0 100 100">
@@ -29,31 +29,31 @@ const Conversion: React.FC = () => {
         </svg>
       </div>
 
-      <div className="max-w-[680px] mx-auto px-6 text-center relative z-10">
-        <h2 className="text-3xl lg:text-4xl font-extrabold text-slate-900 mb-8 reveal">
+      <div className="max-w-[680px] mx-auto px-4 sm:px-6 text-center relative z-10">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-6 sm:mb-8 reveal">
           Start With A Structured Review Of Your Annotation Workflow
         </h2>
-        <p className="text-slate-600 text-lg mb-12 text-readable mx-auto reveal" style={{ transitionDelay: '0.1s' }}>
-          Stop guessing why your model accuracy is plateauing. Speak with an 
-          AI operations architect to audit your current labeling process and 
+        <p className="text-slate-600 text-base sm:text-lg mb-8 sm:mb-10 lg:mb-12 text-readable mx-auto reveal" style={{ transitionDelay: '0.1s' }}>
+          Stop guessing why your model accuracy is plateauing. Speak with an
+          AI operations architect to audit your current labeling process and
           identify the precision leaks costing you time.
         </p>
-        
-        <div className="flex flex-col sm:flex-row gap-4 justify-center reveal" style={{ transitionDelay: '0.2s' }}>
-          <button 
+
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center reveal" style={{ transitionDelay: '0.2s' }}>
+          <button
             onClick={() => handleScrollToContact('Book Strategy Call')}
-            className="h-14 px-10 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg shadow-lg shadow-blue-100 transition-all animate-pulse-cta"
+            className="w-full sm:w-auto h-12 sm:h-14 px-8 sm:px-10 bg-blue-600 hover:bg-blue-700 text-white text-sm sm:text-base font-bold rounded-lg shadow-lg shadow-blue-100 transition-all animate-pulse-cta"
           >
             Book Strategy Call
           </button>
-          <button 
+          <button
             onClick={() => handleScrollToContact('Request Pilot Project')}
-            className="h-14 px-10 bg-white hover:bg-slate-50 text-slate-900 font-bold rounded-lg border border-slate-200 shadow-sm transition-all"
+            className="w-full sm:w-auto h-12 sm:h-14 px-8 sm:px-10 bg-white hover:bg-slate-50 text-slate-900 text-sm sm:text-base font-bold rounded-lg border border-slate-200 shadow-sm transition-all"
           >
             Request Pilot Project
           </button>
         </div>
-        
+
         <p className="mt-8 text-[10px] text-slate-400 font-bold uppercase tracking-[0.2em] reveal" style={{ transitionDelay: '0.3s' }}>
           Confidential Strategy Review • No Commitment
         </p>

@@ -4,40 +4,40 @@ import { Mail, Phone, MapPin, Award, ShieldCheck, Database, Globe } from 'lucide
 
 const Authority: React.FC = () => {
   return (
-    <section className="section-spacing bg-slate-50 py-24 border-y border-slate-100 relative overflow-hidden">
+    <section id="about" className="section-spacing bg-slate-50 py-12 sm:py-16 lg:py-24 border-y border-slate-100 relative overflow-hidden">
       {/* Subtle background decoration in empty space */}
       <div className="absolute -bottom-10 -right-10 opacity-[0.05] pointer-events-none">
         <svg width="400" height="400" viewBox="0 0 100 100">
           {Array.from({ length: 20 }).map((_, i) => (
-            <circle 
-              key={i} 
-              cx={Math.random() * 100} 
-              cy={Math.random() * 100} 
-              r="0.5" 
-              fill="#3b82f6" 
+            <circle
+              key={i}
+              cx={Math.random() * 100}
+              cy={Math.random() * 100}
+              r="0.5"
+              fill="#3b82f6"
             />
           ))}
         </svg>
       </div>
 
-      <div className="max-content grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 relative z-10">
+      <div className="max-content grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 lg:gap-16 xl:gap-24 relative z-10">
         {/* Left Column: Narrative */}
         <div className="lg:col-span-7 reveal">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100/50 border border-blue-200 mb-6">
             <Globe className="w-3 h-3 text-blue-600" />
             <span className="text-[10px] font-bold text-blue-700 uppercase tracking-widest">Global Operations</span>
           </div>
-          <h2 className="text-3xl lg:text-4xl font-extrabold text-slate-900 mb-8">Built for Global Scale</h2>
-          <div className="space-y-6 text-slate-600 leading-relaxed text-readable text-lg">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-6 sm:mb-8">Built for Global Scale</h2>
+          <div className="space-y-4 sm:space-y-6 text-slate-600 leading-relaxed text-readable text-base sm:text-lg">
             <p>
-              TRANSFORM Solutions was founded on the principle that data accuracy is the single 
-              most critical bottleneck in modern artificial intelligence. Over the last 23 years, 
+              TRANSFORM Solutions was founded on the principle that data accuracy is the single
+              most critical bottleneck in modern artificial intelligence. Over the last 23 years,
               we have evolved from a business process partner into a specialized AI operations powerhouse.
             </p>
             <p>
-              Headquartered in Austin, Texas, with production centers globally, we provide 
-              the secure infrastructure and specialized human capital required to support 
-              Fortune 500 tech firms and ambitious startups alike. Our approach combines 
+              Headquartered in Austin, Texas, with production centers globally, we provide
+              the secure infrastructure and specialized human capital required to support
+              Fortune 500 tech firms and ambitious startups alike. Our approach combines
               US-based strategic governance with global operational efficiency.
             </p>
           </div>
@@ -46,14 +46,14 @@ const Authority: React.FC = () => {
         {/* Right Column: Authority Markers & Contact */}
         <div className="lg:col-span-5 space-y-10">
           {/* Metrics */}
-          <div className="grid grid-cols-2 gap-4 reveal" style={{ transitionDelay: '0.2s' }}>
-            <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
-              <p className="text-3xl font-black text-slate-900 tracking-tighter">23+</p>
-              <p className="text-[10px] text-slate-400 uppercase font-black mt-1 tracking-widest">Years Expertise</p>
+          <div className="grid grid-cols-2 gap-3 sm:gap-4 reveal" style={{ transitionDelay: '0.2s' }}>
+            <div className="bg-white p-4 sm:p-6 rounded-xl sm:rounded-2xl border border-slate-200 shadow-sm">
+              <p className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tighter">23+</p>
+              <p className="text-[9px] sm:text-[10px] text-slate-400 uppercase font-black mt-1 tracking-widest">Years Expertise</p>
             </div>
             <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
-              <p className="text-3xl font-black text-slate-900 tracking-tighter">500M+</p>
-              <p className="text-[10px] text-slate-400 uppercase font-black mt-1 tracking-widest">Labels Verified</p>
+              <p className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tighter">500M+</p>
+              <p className="text-[9px] sm:text-[10px] text-slate-400 uppercase font-black mt-1 tracking-widest">Labels Verified</p>
             </div>
           </div>
 
@@ -114,16 +114,16 @@ const Authority: React.FC = () => {
 
           {/* Credibility Badges / Industry Logos */}
           <div className="pt-8 flex items-center gap-8 opacity-40 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500 reveal" style={{ transitionDelay: '0.5s' }}>
-            <img 
-              src="https://clutch.co/sites/all/themes/clutch/logo.svg" 
-              alt="Clutch Logo" 
-              className="h-5 w-auto" 
+            <img
+              src="https://clutch.co/sites/all/themes/clutch/logo.svg"
+              alt="Clutch Logo"
+              className="h-5 w-auto"
               onError={(e) => (e.currentTarget.style.display = 'none')}
             />
-            <img 
-              src="https://www.goodfirms.co/assets/img/logo.svg" 
-              alt="GoodFirms Logo" 
-              className="h-6 w-auto" 
+            <img
+              src="https://www.goodfirms.co/assets/img/logo.svg"
+              alt="GoodFirms Logo"
+              className="h-6 w-auto"
               onError={(e) => (e.currentTarget.style.display = 'none')}
             />
             <div className="h-4 w-px bg-slate-300"></div>

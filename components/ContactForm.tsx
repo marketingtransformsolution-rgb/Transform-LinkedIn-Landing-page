@@ -36,19 +36,19 @@ const ContactForm: React.FC = () => {
   return (
     <section id="contact-section" className="section-spacing bg-slate-50 border-y border-slate-100">
       <div className="max-content">
-        <div className="max-w-[800px] mx-auto bg-white rounded-[2.5rem] p-8 lg:p-16 shadow-xl shadow-slate-200/50 reveal">
-          <div className="text-center mb-10">
+        <div className="max-w-[800px] mx-auto bg-white rounded-2xl sm:rounded-3xl lg:rounded-[2.5rem] p-6 sm:p-8 lg:p-16 shadow-xl shadow-slate-200/50 reveal">
+          <div className="text-center mb-8 sm:mb-10">
             <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.4em] block mb-4">
               GET IN TOUCH
             </span>
-            <h2 className="text-3xl lg:text-4xl font-extrabold text-slate-900 mb-6">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-4 sm:mb-6">
               Ready to Scale Your Training Data?
             </h2>
-            <p className="text-slate-500 font-medium">
+            <p className="text-slate-500 font-medium text-sm sm:text-base">
               Submit your project details and an AI operations expert will contact you to discuss a custom annotation workflow.
             </p>
           </div>
-          
+
           {/* Container where HubSpot will inject the form */}
           <div id="hubspot-form-container" className="min-h-[400px]">
             {/* Loading placeholder */}

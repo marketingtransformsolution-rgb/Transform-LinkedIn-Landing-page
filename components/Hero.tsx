@@ -12,8 +12,8 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section className="relative min-h-[90vh] lg:min-h-screen flex items-center pt-32 pb-20 overflow-hidden bg-white">
-      
+    <section className="relative min-h-[85vh] lg:min-h-screen flex items-center pt-24 sm:pt-28 lg:pt-32 pb-12 sm:pb-16 lg:pb-20 overflow-hidden bg-white">
+
       {/* Background Subtle technical grid overlay */}
       <div className="absolute inset-0 pointer-events-none opacity-[0.03]">
         <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
@@ -27,29 +27,29 @@ const Hero: React.FC = () => {
       </div>
 
       <div className="max-content w-full relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
+
           {/* Left Column: Text Content */}
-          <div className="space-y-10 text-center lg:text-left">
+          <div className="space-y-6 sm:space-y-8 lg:space-y-10 text-center lg:text-left">
             <div className="reveal" style={{ transitionDelay: '0.1s' }}>
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 mb-6">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 mb-4 sm:mb-6">
                 <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span>
-                <span className="text-[10px] font-black text-blue-700 uppercase tracking-widest">Scale Your ML Pipelines</span>
+                <span className="text-[9px] sm:text-[10px] font-black text-blue-700 uppercase tracking-widest">Scale Your ML Pipelines</span>
               </div>
-              <h1 className="text-4xl lg:text-6xl xl:text-7xl font-extrabold tracking-tight leading-[1.05] text-slate-900">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-extrabold tracking-tight leading-[1.1] sm:leading-[1.08] lg:leading-[1.05] text-slate-900">
                 Are Your AI Models Slowing Down Because Training Data Cannot Keep Up?
               </h1>
             </div>
-            
-            <div className="reveal space-y-8" style={{ transitionDelay: '0.25s' }}>
-              <p className="text-xl lg:text-2xl font-semibold text-slate-600 leading-tight">
+
+            <div className="reveal space-y-4 sm:space-y-6 lg:space-y-8" style={{ transitionDelay: '0.25s' }}>
+              <p className="text-lg sm:text-xl lg:text-2xl font-semibold text-slate-600 leading-tight">
                 Inconsistent labels or unreliable outputs holding back your deployment?
               </p>
-              
-              <p className="text-lg lg:text-xl font-medium text-slate-500 leading-relaxed text-readable">
-                <a 
-                  href="https://www.transformsolution.com/" 
-                  target="_blank" 
+
+              <p className="text-base sm:text-lg lg:text-xl font-medium text-slate-500 leading-relaxed text-readable mx-auto lg:mx-0">
+                <a
+                  href="https://www.transformsolution.com/"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-600 font-bold uppercase tracking-wide hover:underline decoration-2 underline-offset-4"
                 >
@@ -57,22 +57,22 @@ const Hero: React.FC = () => {
                 </a> delivers high-precision Human-in-the-Loop data annotation built to bring accuracy and scale to production AI teams.
               </p>
 
-              <div className="pt-4 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <button 
+              <div className="pt-2 sm:pt-4 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start items-center">
+                <button
                   onClick={handleScrollToContact}
-                  className="h-14 px-10 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl shadow-xl shadow-blue-100 transition-all transform hover:scale-105 active:scale-95"
+                  className="w-full sm:w-auto h-12 sm:h-14 px-8 sm:px-10 bg-blue-600 hover:bg-blue-700 text-white text-sm sm:text-base font-bold rounded-xl shadow-xl shadow-blue-100 transition-all transform hover:scale-105 active:scale-95"
                 >
                   Start Your Pilot Project
                 </button>
                 <div className="flex items-center gap-2 justify-center lg:justify-start px-4">
                   <div className="flex -space-x-2">
                     {[1, 2, 3].map(i => (
-                      <div key={i} className="w-8 h-8 rounded-full border-2 border-white bg-slate-200 overflow-hidden shadow-sm">
+                      <div key={i} className="w-7 h-7 sm:w-8 sm:h-8 rounded-full border-2 border-white bg-slate-200 overflow-hidden shadow-sm">
                         <img src={`https://i.pravatar.cc/100?img=${i + 10}`} alt="Expert" />
                       </div>
                     ))}
                   </div>
-                  <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">Trusted by 50+ ML Teams</span>
+                  <span className="text-[10px] sm:text-xs font-bold text-slate-400 uppercase tracking-wider">Trusted by 50+ ML Teams</span>
                 </div>
               </div>
             </div>
@@ -83,12 +83,12 @@ const Hero: React.FC = () => {
             {/* The Main "Annotation View" Mockup */}
             <div className="relative bg-slate-900 rounded-3xl p-3 shadow-2xl shadow-slate-300 transform rotate-1 transition-transform hover:rotate-0 duration-700">
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-slate-800">
-                <img 
-                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1200" 
-                  alt="AI Data Annotation Interface" 
+                <img
+                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1200"
+                  alt="AI Data Annotation Interface"
                   className="w-full h-full object-cover opacity-80"
                 />
-                
+
                 {/* Visual Bounding Box Overlays to simulate annotation software */}
                 <div className="absolute inset-0 pointer-events-none">
                   {/* Bounding Box 1 */}
@@ -97,7 +97,7 @@ const Hero: React.FC = () => {
                       OBJECT_DETECT: Person
                     </span>
                   </div>
-                  
+
                   {/* Bounding Box 2 */}
                   <div className="absolute bottom-[30%] right-[20%] w-[180px] h-[100px] border-2 border-emerald-500 rounded-sm">
                     <span className="absolute -top-6 left-0 bg-emerald-500 text-[10px] text-white px-2 py-0.5 font-bold rounded-t">
@@ -114,7 +114,7 @@ const Hero: React.FC = () => {
                   </div>
                 </div>
               </div>
-              
+
               {/* Bottom UI Bar */}
               <div className="mt-3 flex justify-between items-center px-4 py-2">
                 <div className="flex gap-2">

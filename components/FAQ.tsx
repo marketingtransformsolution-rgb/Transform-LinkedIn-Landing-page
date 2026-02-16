@@ -38,33 +38,32 @@ const FAQ: React.FC = () => {
 
   return (
     <section className="section-spacing">
-      <div className="max-w-[800px] mx-auto px-6">
-        <div className="text-center mb-16 reveal">
-          <h2 className="text-3xl font-extrabold text-slate-900">Frequently Asked Questions</h2>
-          <p className="text-slate-500 mt-2">Everything you need to know about our operational model.</p>
+      <div className="max-w-[800px] mx-auto px-4 sm:px-6">
+        <div className="text-center mb-12 sm:mb-16 reveal">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900">Frequently Asked Questions</h2>
+          <p className="text-slate-500 mt-2 text-sm sm:text-base">Everything you need to know about our operational model.</p>
         </div>
 
         <div className="space-y-4">
           {faqs.map((faq, index) => (
-            <div 
+            <div
               key={index}
               className="reveal border border-slate-200 rounded-xl overflow-hidden bg-white hover:border-blue-200 transition-colors"
               style={{ transitionDelay: `${index * 0.1}s` }}
             >
-              <button 
+              <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full p-6 text-left flex items-center justify-between group"
+                className="w-full p-4 sm:p-6 text-left flex items-center justify-between group"
               >
-                <span className="font-bold text-slate-900 leading-tight pr-4">{faq.q}</span>
+                <span className="font-bold text-slate-900 leading-tight pr-2 sm:pr-4 text-sm sm:text-base">{faq.q}</span>
                 <ChevronDown className={`w-5 h-5 text-slate-400 transition-transform duration-300 ${openIndex === index ? 'rotate-180' : ''}`} />
               </button>
-              
-              <div 
-                className={`overflow-hidden transition-all duration-500 ease-in-out ${
-                  openIndex === index ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
-                }`}
+
+              <div
+                className={`overflow-hidden transition-all duration-500 ease-in-out ${openIndex === index ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
+                  }`}
               >
-                <div className="p-6 pt-0 text-slate-600 text-[15px] leading-relaxed border-t border-slate-50">
+                <div className="p-4 sm:p-6 pt-0 text-slate-600 text-sm sm:text-[15px] leading-relaxed border-t border-slate-50">
                   {faq.a}
                 </div>
               </div>

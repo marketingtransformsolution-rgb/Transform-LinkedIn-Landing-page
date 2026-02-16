@@ -27,7 +27,7 @@ const Counter: React.FC<CounterProps> = ({ end, suffix = "", decimals = 0 }) => 
             const progress = Math.min(elapsed / duration, 1);
             const easeOutExpo = 1 - Math.pow(2, -10 * progress);
             const currentCount = easeOutExpo * end;
-            
+
             setCount(currentCount);
 
             if (progress < 1) {
@@ -64,7 +64,7 @@ const TrustStrip: React.FC = () => {
   };
 
   return (
-    <section className="relative bg-slate-50 py-24 border-y border-slate-100 overflow-hidden">
+    <section className="relative bg-slate-50 py-12 sm:py-16 lg:py-24 border-y border-slate-100 overflow-hidden">
       {/* Background Subtle Annotation Decor */}
       <div className="absolute inset-0 pointer-events-none opacity-[0.03]">
         <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
@@ -82,14 +82,14 @@ const TrustStrip: React.FC = () => {
 
       <div className="max-content relative z-10">
         {/* Metric Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-          
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 mb-8 sm:mb-12 lg:mb-16">
+
           {/* Card 1 */}
-          <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 reveal flex flex-col items-center text-center transition-transform hover:-translate-y-1" style={{ transitionDelay: '0.1s' }}>
-            <div className="text-4xl lg:text-5xl font-black text-blue-600 mb-2">
+          <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-slate-100 reveal flex flex-col items-center text-center transition-transform hover:-translate-y-1" style={{ transitionDelay: '0.1s' }}>
+            <div className="text-3xl sm:text-4xl lg:text-5xl font-black text-blue-600 mb-2">
               <Counter end={100} suffix="mn+" />
             </div>
-            <div className="text-xs font-black text-slate-400 uppercase tracking-widest">Data points</div>
+            <div className="text-[10px] sm:text-xs font-black text-slate-400 uppercase tracking-widest">Data points</div>
           </div>
 
           {/* Card 2 */}
@@ -119,15 +119,15 @@ const TrustStrip: React.FC = () => {
         </div>
 
         {/* Action Area */}
-        <div className="text-center max-w-2xl mx-auto space-y-8 reveal" style={{ transitionDelay: '0.5s' }}>
-          <p className="text-xl lg:text-2xl font-bold text-slate-800 leading-tight">
+        <div className="text-center max-w-2xl mx-auto space-y-4 sm:space-y-6 lg:space-y-8 reveal" style={{ transitionDelay: '0.5s' }}>
+          <p className="text-lg sm:text-xl lg:text-2xl font-bold text-slate-800 leading-tight px-4">
             Create high quality training datasets to power your AI and ML models
           </p>
-          
+
           <div>
-            <button 
+            <button
               onClick={handleScrollToContact}
-              className="h-16 px-12 bg-blue-600 hover:bg-blue-700 text-white font-black text-lg rounded-xl shadow-xl shadow-blue-100 transition-all transform hover:scale-105 active:scale-95 animate-pulse-cta"
+              className="w-full sm:w-auto h-14 sm:h-16 px-8 sm:px-12 bg-blue-600 hover:bg-blue-700 text-white font-black text-base sm:text-lg rounded-xl shadow-xl shadow-blue-100 transition-all transform hover:scale-105 active:scale-95 animate-pulse-cta"
             >
               ANNOTATE DATA WITH US NOW
             </button>

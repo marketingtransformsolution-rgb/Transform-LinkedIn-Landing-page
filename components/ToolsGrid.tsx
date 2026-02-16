@@ -23,31 +23,31 @@ const ToolsGrid: React.FC = () => {
     <section className="section-spacing bg-white">
       <div className="max-content">
         {/* Large Rounded Container matching the image */}
-        <div className="bg-[#f9fafb] rounded-[3rem] p-8 lg:p-20 shadow-sm border border-slate-50 reveal">
-          
-          <div className="max-w-[900px] mb-12">
+        <div className="bg-[#f9fafb] rounded-2xl sm:rounded-3xl lg:rounded-[3rem] p-6 sm:p-8 lg:p-20 shadow-sm border border-slate-50 reveal">
+
+          <div className="max-w-[900px] mb-8 sm:mb-10 lg:mb-12">
             <span className="text-[11px] font-black text-slate-500 uppercase tracking-[0.3em] block mb-8">
               PLATFORMS AND TOOLS
             </span>
-            <h2 className="text-3xl lg:text-4xl font-extrabold text-slate-900 mb-8 tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-6 sm:mb-8 tracking-tight">
               Expertise in Top Data Annotation Tools
             </h2>
-            <p className="text-slate-600 text-[15px] lg:text-[17px] leading-[1.7] font-medium">
+            <p className="text-slate-600 text-sm sm:text-[15px] lg:text-[17px] leading-[1.7] font-medium">
               Our team of over 120 annotators can handle complex data annotation tasks and manage large-scale data labeling owing to their proficiency in the most prominently used data annotation tools. We can also handle proprietary tools. With a human-in-the-loop data labeling approach, we resolve data annotation bottlenecks to accelerate your AI projects and help you achieve better outcomes.
             </p>
           </div>
 
           {/* Tools Grid matching image layout */}
-          <div className="flex flex-wrap gap-4 lg:gap-6 justify-start">
+          <div className="flex flex-wrap gap-3 sm:gap-4 lg:gap-6 justify-start">
             {tools.map((tool, index) => (
-              <div 
+              <div
                 key={index}
-                className="bg-white rounded-xl shadow-sm border border-slate-100 h-16 lg:h-20 px-6 lg:px-8 flex items-center justify-center transition-transform hover:-translate-y-1 hover:shadow-md cursor-default"
+                className="bg-white rounded-xl shadow-sm border border-slate-100 h-14 sm:h-16 lg:h-20 px-4 sm:px-6 lg:px-8 flex items-center justify-center transition-transform hover:-translate-y-1 hover:shadow-md cursor-default"
               >
                 {tool.type === 'both' && (
                   <div className="flex items-center gap-3">
-                    <img src={tool.logo} alt={tool.name} className="w-6 h-6 object-contain" onError={(e) => (e.currentTarget.style.display = 'none')} />
-                    <span className="text-[14px] lg:text-[16px] font-bold text-slate-800 whitespace-nowrap">{tool.name}</span>
+                    <img src={tool.logo} alt={tool.name} className="w-5 h-5 sm:w-6 sm:h-6 object-contain" onError={(e) => (e.currentTarget.style.display = 'none')} />
+                    <span className="text-xs sm:text-[14px] lg:text-[16px] font-bold text-slate-800 whitespace-nowrap">{tool.name}</span>
                   </div>
                 )}
                 {tool.type === 'text' && (

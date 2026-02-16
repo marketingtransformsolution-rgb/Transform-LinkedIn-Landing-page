@@ -27,29 +27,29 @@ const cases = [
 
 const CaseStudies: React.FC = () => {
   return (
-    <section className="section-spacing bg-white overflow-hidden">
+    <section id="case-studies" className="section-spacing bg-white overflow-hidden">
       <div className="max-content">
-        <div className="mb-16 reveal">
-          <h2 className="text-3xl lg:text-4xl font-extrabold text-slate-900">Proven Performance Metrics</h2>
-          <p className="text-slate-500 mt-4">Real results from complex global annotation projects.</p>
+        <div className="mb-12 sm:mb-16 reveal">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900">Proven Performance Metrics</h2>
+          <p className="text-slate-500 mt-3 sm:mt-4 text-sm sm:text-base">Real results from complex global annotation projects.</p>
         </div>
 
-        <div className="space-y-24">
+        <div className="space-y-16 sm:space-y-20 lg:space-y-24">
           {cases.map((item, index) => (
-            <div 
-              key={index} 
-              className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center reveal group"
+            <div
+              key={index}
+              className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-12 items-center reveal group"
             >
               {/* Left: Metric */}
               <div className="lg:col-span-4 text-center lg:text-left">
-                <span className="block text-8xl lg:text-9xl font-black text-slate-900 tracking-tighter group-hover:text-blue-600 transition-colors duration-500">
+                <span className="block text-6xl sm:text-7xl lg:text-8xl xl:text-9xl font-black text-slate-900 tracking-tighter group-hover:text-blue-600 transition-colors duration-500">
                   {item.metric}
                 </span>
-                <span className="text-xl font-bold text-slate-500 uppercase tracking-widest">{item.label}</span>
+                <span className="text-base sm:text-lg lg:text-xl font-bold text-slate-500 uppercase tracking-widest">{item.label}</span>
               </div>
 
               {/* Right: Explanation */}
-              <div className="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-12">
+              <div className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-10 lg:gap-12">
                 <div>
                   <h4 className="text-xs font-bold text-blue-600 uppercase mb-3 tracking-wider">The Challenge</h4>
                   <p className="text-slate-600 text-sm leading-relaxed">{item.challenge}</p>

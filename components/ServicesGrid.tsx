@@ -35,26 +35,26 @@ const services = [
 
 const ServicesGrid: React.FC = () => {
   return (
-    <section className="section-spacing gradient-bg">
+    <section id="services" className="section-spacing gradient-bg">
       <div className="max-content">
-        <div className="text-center mb-16 reveal">
-          <h2 className="text-3xl lg:text-4xl font-extrabold text-slate-900 mb-4">Core Technical Capabilities</h2>
-          <p className="text-slate-500">End-to-end expertise across all major data modalities for production AI.</p>
+        <div className="text-center mb-12 sm:mb-16 reveal">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-3 sm:mb-4">Core Technical Capabilities</h2>
+          <p className="text-slate-500 text-sm sm:text-base px-4 sm:px-0">End-to-end expertise across all major data modalities for production AI.</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
           {services.map((service, index) => (
-            <div 
+            <div
               key={index}
-              className="reveal relative bg-white rounded-2xl overflow-hidden border border-slate-100 h-[280px] flex flex-col justify-end p-8 shadow-sm"
+              className="reveal relative bg-white rounded-2xl overflow-hidden border border-slate-100 h-auto sm:h-[280px] flex flex-col justify-end p-6 sm:p-8 shadow-sm"
               style={{ transitionDelay: `${index * 0.1}s` }}
             >
               {/* Background with subtle watermark-style blur - Static, no hover change */}
-              <div 
-                className="absolute inset-0 bg-cover bg-center opacity-[0.03] blur-[2px]" 
+              <div
+                className="absolute inset-0 bg-cover bg-center opacity-[0.03] blur-[2px]"
                 style={{ backgroundImage: `url(${service.bg})` }}
               ></div>
-              
+
               <div className="relative z-10 space-y-4">
                 <div className="w-12 h-12 rounded-lg bg-blue-600 text-white flex items-center justify-center shadow-md mb-4">
                   {/* Fixed: Use React.ReactElement<any> to avoid type mismatch with className prop */}
