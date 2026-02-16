@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+
+import React, { useEffect } from 'react';
 
 // Fix: Use capital 'Window' to correctly extend the global Window interface in TypeScript
 declare global {
@@ -9,7 +10,7 @@ declare global {
 
 const ContactForm: React.FC = () => {
   useEffect(() => {
-    const script = document.createElement("script");
+    const script = document.createElement('script');
     script.src = "//js-na2.hsforms.net/forms/embed/v2.js";
     script.charset = "utf-8";
     script.type = "text/javascript";
@@ -22,7 +23,7 @@ const ContactForm: React.FC = () => {
           portalId: "245030364",
           formId: "cbcec5da-b477-4077-8a9f-0d32d6fa7672",
           region: "na2",
-          target: "#hubspot-form-container",
+          target: '#hubspot-form-container'
         });
       }
     };
@@ -33,25 +34,21 @@ const ContactForm: React.FC = () => {
   }, []);
 
   return (
-    <section
-      id="contact-section"
-      className="section-spacing bg-slate-50 border-y border-slate-100"
-    >
+    <section id="contact-section" className="section-spacing bg-slate-50 border-y border-slate-100">
       <div className="max-content">
-        <div className="max-w-[800px] mx-auto bg-white rounded-[2rem] md:rounded-[2.5rem] p-6 md:p-12 lg:p-16 shadow-xl shadow-slate-200/50 reveal">
+        <div className="max-w-[800px] mx-auto bg-white rounded-[2.5rem] p-8 lg:p-16 shadow-xl shadow-slate-200/50 reveal">
           <div className="text-center mb-10">
             <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.4em] block mb-4">
               GET IN TOUCH
             </span>
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-4 md:mb-6">
+            <h2 className="text-3xl lg:text-4xl font-extrabold text-slate-900 mb-6">
               Ready to Scale Your Training Data?
             </h2>
             <p className="text-slate-500 font-medium">
-              Submit your project details and an AI operations expert will
-              contact you to discuss a custom annotation workflow.
+              Submit your project details and an AI operations expert will contact you to discuss a custom annotation workflow.
             </p>
           </div>
-
+          
           {/* Container where HubSpot will inject the form */}
           <div id="hubspot-form-container" className="min-h-[400px]">
             {/* Loading placeholder */}
