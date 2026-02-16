@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { trackCTAEvent } from '../utils/analytics';
+import ImageCarousel from './ImageCarousel';
 
 const Hero: React.FC = () => {
   const handleScrollToContact = () => {
@@ -78,58 +79,20 @@ const Hero: React.FC = () => {
             </div>
           </div>
 
-          {/* Right Column: Visual Component */}
-          <div className="relative reveal hidden lg:block" style={{ transitionDelay: '0.4s' }}>
-            {/* The Main "Annotation View" Mockup */}
-            <div className="relative bg-slate-900 rounded-3xl p-3 shadow-2xl shadow-slate-300 transform rotate-1 transition-transform hover:rotate-0 duration-700">
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-slate-800">
-                <img
-                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1200"
-                  alt="AI Data Annotation Interface"
-                  className="w-full h-full object-cover opacity-80"
-                />
-
-                {/* Visual Bounding Box Overlays to simulate annotation software */}
-                <div className="absolute inset-0 pointer-events-none">
-                  {/* Bounding Box 1 */}
-                  <div className="absolute top-[20%] left-[30%] w-[120px] h-[150px] border-2 border-blue-500 rounded-sm">
-                    <span className="absolute -top-6 left-0 bg-blue-500 text-[10px] text-white px-2 py-0.5 font-bold rounded-t">
-                      OBJECT_DETECT: Person
-                    </span>
-                  </div>
-
-                  {/* Bounding Box 2 */}
-                  <div className="absolute bottom-[30%] right-[20%] w-[180px] h-[100px] border-2 border-emerald-500 rounded-sm">
-                    <span className="absolute -top-6 left-0 bg-emerald-500 text-[10px] text-white px-2 py-0.5 font-bold rounded-t">
-                      SEMANTIC_SEG: Component
-                    </span>
-                  </div>
-
-                  {/* UI Elements */}
-                  <div className="absolute top-4 right-4 bg-white/10 backdrop-blur-md p-3 rounded-xl border border-white/20 space-y-2">
-                    <div className="w-24 h-2 bg-white/20 rounded-full overflow-hidden">
-                      <div className="w-3/4 h-full bg-blue-500"></div>
-                    </div>
-                    <p className="text-[10px] text-white font-bold">Accuracy: 99.8%</p>
-                  </div>
-                </div>
+          {/* Right Column: Clean Image Carousel with 3D Deck Effect */}
+          <div className="relative reveal hidden lg:block ml-12" style={{ transitionDelay: '0.4s' }}>
+            {/* Simple Carousel Container without frame */}
+            <div className="relative">
+              {/* Carousel with 3D deck effect */}
+              <div className="relative aspect-[4/3] rounded-2xl overflow-visible shadow-2xl">
+                <ImageCarousel />
               </div>
 
-              {/* Bottom UI Bar */}
-              <div className="mt-3 flex justify-between items-center px-4 py-2">
-                <div className="flex gap-2">
-                  <div className="w-2 h-2 rounded-full bg-rose-500"></div>
-                  <div className="w-2 h-2 rounded-full bg-amber-500"></div>
-                  <div className="w-2 h-2 rounded-full bg-emerald-500"></div>
-                </div>
-                <div className="text-[10px] font-mono text-slate-500">TRANSFORM_OS v2.4.0</div>
+              {/* Bottom Stats Badge */}
+              <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-white px-8 py-4 rounded-2xl shadow-xl border border-slate-100 z-30">
+                <p className="text-3xl font-black text-blue-600 text-center">500M+</p>
+                <p className="text-[10px] text-slate-400 font-bold uppercase tracking-widest text-center mt-1">Annotations Delivered</p>
               </div>
-            </div>
-
-            {/* Floating Decorative Badge */}
-            <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl border border-slate-100 animate-bounce-subtle">
-              <p className="text-3xl font-black text-blue-600">500M+</p>
-              <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Annotations Delivered</p>
             </div>
           </div>
 

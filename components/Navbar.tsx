@@ -41,7 +41,9 @@ const Navbar: React.FC = () => {
                 <div className="flex items-center justify-between h-20">
                     {/* Logo */}
                     <a
-                        href="/"
+                        href="https://www.transformsolution.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="flex items-center gap-3 group transition-transform duration-300 hover:scale-105"
                     >
                         <img
