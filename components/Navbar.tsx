@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { Menu, X, ChevronDown, Camera, Box } from 'lucide-react';
+import { Menu, X, ChevronDown, Camera, Box, Map } from 'lucide-react';
 import { useNavigate, useLocation } from 'react-router-dom';
 
 /* ── Services sub-menu items ─────────────────────────────────────────── */
@@ -16,6 +16,12 @@ const subServices = [
         icon: Box,
         label: 'LiDAR & Sensor Annotation',
         desc: '3D point cloud cuboids & sensor fusion workflows',
+    },
+    {
+        href: '/services/gis-mapping-annotation',
+        icon: Map,
+        label: 'GIS Mapping Annotation',
+        desc: 'Road extraction, terrain classification & building footprints',
     },
 ];
 
@@ -70,8 +76,8 @@ const Navbar: React.FC = () => {
     return (
         <nav
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-                    ? 'bg-white/95 backdrop-blur-md shadow-lg border-b border-slate-200'
-                    : 'bg-white/80 backdrop-blur-sm'
+                ? 'bg-white/95 backdrop-blur-md shadow-lg border-b border-slate-200'
+                : 'bg-white/80 backdrop-blur-sm'
                 }`}
         >
             <style>{`
