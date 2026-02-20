@@ -152,64 +152,69 @@ const ImageVideoAnnotationPage: React.FC = () => {
     return (
         <>
             {/* ── SECTION 1 · HERO ─────────────────────────────────────────── */}
-            <section className="relative min-h-[80vh] flex items-center pt-28 sm:pt-32 pb-16 sm:pb-20 overflow-hidden bg-white">
+            <section className="relative bg-white pt-28 sm:pt-32 pb-16 sm:pb-20 overflow-hidden">
 
-                {/* subtle grid background */}
-                <div className="absolute inset-0 pointer-events-none opacity-[0.03]">
-                    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                            <pattern id="subGrid" width="60" height="60" patternUnits="userSpaceOnUse">
-                                <path d="M 60 0 L 0 0 0 60" fill="none" stroke="currentColor" strokeWidth="0.5" />
-                            </pattern>
-                        </defs>
-                        <rect width="100%" height="100%" fill="url(#subGrid)" />
-                    </svg>
-                </div>
-
-                {/* blue accent blob */}
-                <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-blue-50 opacity-60 blur-3xl pointer-events-none -translate-y-1/3 translate-x-1/4" />
+                {/* Accent blob */}
+                <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full bg-blue-50 opacity-50 blur-3xl pointer-events-none -translate-y-1/3 translate-x-1/4" />
 
                 <div className="max-content w-full relative z-10">
-                    <div className="max-w-3xl">
+                    {/* Two-column grid: 60% text / 40% image */}
+                    <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-10 lg:gap-16 items-start">
 
-                        <div className="reveal" style={{ transitionDelay: '0.05s' }}>
-                            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 mb-6">
-                                <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse" />
-                                <span className="text-[10px] font-black text-blue-700 uppercase tracking-widest">Image &amp; Video Annotation</span>
+                        {/* LEFT — badge + H1 + body + CTAs */}
+                        <div>
+                            <div className="reveal" style={{ transitionDelay: '0.05s' }}>
+                                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 mb-6">
+                                    <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse" />
+                                    <span className="text-[10px] font-black text-blue-700 uppercase tracking-widest">Image &amp; Video Annotation</span>
+                                </div>
+                            </div>
+
+                            <div className="reveal" style={{ transitionDelay: '0.1s' }}>
+                                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] xl:text-6xl font-extrabold tracking-tight leading-[1.07] text-slate-900 mb-6 sm:mb-8">
+                                    Image and Video Annotation Operations Built for{' '}
+                                    <span className="text-blue-600">Production Scale AI</span>
+                                </h1>
+                            </div>
+
+                            <div className="reveal space-y-5" style={{ transitionDelay: '0.18s' }}>
+                                <p className="text-lg sm:text-xl text-slate-600 leading-relaxed">
+                                    Computer vision initiatives rarely slow down because of algorithms. They slow down because annotation workflows cannot keep up with real-world deployment demands.
+                                </p>
+                                <p className="text-base sm:text-lg text-slate-500 leading-relaxed">
+                                    As datasets expand, annotation standards become inconsistent, review cycles grow longer, and engineering teams spend more time fixing training data than improving models.{' '}
+                                    <span className="text-blue-600 font-bold">TRANSFORM</span> delivers managed image and video annotation operations built for enterprise scale.
+                                </p>
+                                <div className="flex flex-col sm:flex-row gap-4 pt-2">
+                                    <button
+                                        onClick={scrollToContact}
+                                        className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl shadow-xl shadow-blue-100 transition-all transform hover:scale-105 active:scale-95 text-sm sm:text-base"
+                                    >
+                                        Start Your Annotation Operations Assessment
+                                        <ArrowRight className="w-4 h-4" />
+                                    </button>
+                                    <button
+                                        onClick={scrollToContact}
+                                        className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-slate-200 hover:border-blue-300 text-slate-700 hover:text-blue-600 font-bold rounded-xl transition-all text-sm sm:text-base hover:bg-blue-50"
+                                    >
+                                        Talk With an Annotation Strategy Specialist
+                                    </button>
+                                </div>
                             </div>
                         </div>
 
-                        <div className="reveal" style={{ transitionDelay: '0.1s' }}>
-                            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.08] text-slate-900 mb-6 sm:mb-8">
-                                Image and Video Annotation Operations Built for{' '}
-                                <span className="text-blue-600">Production Scale AI</span>
-                            </h1>
-                        </div>
-
-                        <div className="reveal space-y-6" style={{ transitionDelay: '0.2s' }}>
-                            <p className="text-lg sm:text-xl text-slate-600 leading-relaxed max-w-2xl">
-                                Computer vision initiatives rarely slow down because of algorithms. They slow down because annotation workflows cannot keep up with real-world deployment demands.
-                            </p>
-                            <p className="text-base sm:text-lg text-slate-500 leading-relaxed max-w-2xl">
-                                As datasets expand across multiple environments, annotation standards become inconsistent, review cycles grow longer, and engineering teams spend more time fixing training data than improving models.{' '}
-                                <span className="text-blue-600 font-bold">TRANSFORM</span> delivers managed image and video annotation operations built for enterprise scale.
-                            </p>
-
-                            <div className="flex flex-col sm:flex-row gap-4 pt-2">
-                                <button
-                                    onClick={scrollToContact}
-                                    className="inline-flex items-center justify-center gap-2 h-13 px-8 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl shadow-xl shadow-blue-100 transition-all transform hover:scale-105 active:scale-95 text-sm sm:text-base"
-                                >
-                                    Start Your Annotation Operations Assessment
-                                    <ArrowRight className="w-4 h-4" />
-                                </button>
-                                <button
-                                    onClick={scrollToContact}
-                                    className="inline-flex items-center justify-center gap-2 h-13 px-8 border-2 border-slate-200 hover:border-blue-300 text-slate-700 hover:text-blue-600 font-bold rounded-xl transition-all text-sm sm:text-base hover:bg-blue-50"
-                                >
-                                    Talk With an Annotation Strategy Specialist
-                                </button>
-                            </div>
+                        {/* RIGHT — hero image, top-aligned with H1 */}
+                        <div className="reveal w-full order-last lg:order-none mt-10 lg:mt-0" style={{ transitionDelay: '0.25s' }}>
+                            <img
+                                src="/image video annotation/hero-image.webp"
+                                alt="Enterprise image and video annotation services for computer vision AI"
+                                className="w-full h-auto rounded-2xl shadow-xl shadow-slate-200/60 object-cover"
+                                loading="eager"
+                                onError={(e) => {
+                                    const t = e.currentTarget;
+                                    t.style.display = 'none';
+                                }}
+                            />
                         </div>
 
                     </div>

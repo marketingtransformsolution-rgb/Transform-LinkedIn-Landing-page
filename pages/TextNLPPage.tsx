@@ -138,57 +138,66 @@ const TextNLPPage: React.FC = () => {
     return (
         <>
             {/* ── SECTION 1 · HERO ─────────────────────────────────────────── */}
-            <section className="relative min-h-[80vh] flex items-center pt-28 sm:pt-32 pb-16 sm:pb-20 overflow-hidden bg-white">
-                <div className="absolute inset-0 pointer-events-none opacity-[0.03]">
-                    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                            <pattern id="nlpGrid" width="60" height="60" patternUnits="userSpaceOnUse">
-                                <path d="M 60 0 L 0 0 0 60" fill="none" stroke="currentColor" strokeWidth="0.5" />
-                            </pattern>
-                        </defs>
-                        <rect width="100%" height="100%" fill="url(#nlpGrid)" />
-                    </svg>
-                </div>
-                <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-violet-50 opacity-60 blur-3xl pointer-events-none -translate-y-1/3 translate-x-1/4" />
+            <section className="relative bg-white pt-28 sm:pt-32 pb-16 sm:pb-20 overflow-hidden">
+                <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full bg-violet-50 opacity-50 blur-3xl pointer-events-none -translate-y-1/3 translate-x-1/4" />
 
                 <div className="max-content w-full relative z-10">
-                    <div className="max-w-3xl">
-                        <div className="reveal" style={{ transitionDelay: '0.05s' }}>
-                            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 mb-6">
-                                <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse" />
-                                <span className="text-[10px] font-black text-blue-700 uppercase tracking-widest">Text &amp; NLP Annotation</span>
+                    <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-10 lg:gap-16 items-start">
+
+                        {/* LEFT — badge + H1 + body + CTAs */}
+                        <div>
+                            <div className="reveal" style={{ transitionDelay: '0.05s' }}>
+                                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 mb-6">
+                                    <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse" />
+                                    <span className="text-[10px] font-black text-blue-700 uppercase tracking-widest">Text &amp; NLP Annotation</span>
+                                </div>
+                            </div>
+                            <div className="reveal" style={{ transitionDelay: '0.1s' }}>
+                                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] xl:text-6xl font-extrabold tracking-tight leading-[1.07] text-slate-900 mb-6 sm:mb-8">
+                                    Text and NLP Annotation Operations Built for{' '}
+                                    <span className="text-blue-600">Scalable Language AI</span>
+                                </h1>
+                            </div>
+                            <div className="reveal space-y-5" style={{ transitionDelay: '0.18s' }}>
+                                <p className="text-lg sm:text-xl text-slate-600 leading-relaxed">
+                                    Language AI models depend on high-quality text datasets, but scaling annotation across diverse content sources often introduces inconsistency, bias, and operational complexity.
+                                </p>
+                                <p className="text-base sm:text-lg text-slate-500 leading-relaxed">
+                                    As LLM training datasets grow, semantic interpretation becomes harder to standardize. What begins as a manageable workflow quickly evolves into a bottleneck.{' '}
+                                    <span className="text-blue-600 font-bold">TRANSFORM</span> provides managed text and NLP annotation operations designed to support enterprise language AI through structured governance, human-in-the-loop validation, and scalable delivery.
+                                </p>
+                                <div className="flex flex-col sm:flex-row gap-4 pt-2">
+                                    <button
+                                        onClick={scrollToContact}
+                                        className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl shadow-xl shadow-blue-100 transition-all transform hover:scale-105 active:scale-95 text-sm sm:text-base"
+                                    >
+                                        Start Your NLP Annotation Assessment
+                                        <ArrowRight className="w-4 h-4" />
+                                    </button>
+                                    <button
+                                        onClick={scrollToContact}
+                                        className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-slate-200 hover:border-blue-300 text-slate-700 hover:text-blue-600 font-bold rounded-xl transition-all text-sm sm:text-base hover:bg-blue-50"
+                                    >
+                                        Talk With a Language Data Specialist
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                        <div className="reveal" style={{ transitionDelay: '0.1s' }}>
-                            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.08] text-slate-900 mb-6 sm:mb-8">
-                                Text and NLP Annotation Operations Built for{' '}
-                                <span className="text-blue-600">Scalable Language AI</span>
-                            </h1>
+
+                        {/* RIGHT — hero image, top-aligned with H1 */}
+                        <div className="reveal w-full order-last lg:order-none mt-10 lg:mt-0" style={{ transitionDelay: '0.25s' }}>
+                            <img
+                                src="/Text and Lp annotation/hero-image.webp"
+                                alt="Text and NLP annotation for enterprise language AI training"
+                                className="w-full h-auto rounded-2xl shadow-xl shadow-slate-200/60 object-cover"
+                                loading="eager"
+                                onError={(e) => {
+                                    const t = e.currentTarget;
+                                    t.style.display = 'none';
+                                }}
+                            />
                         </div>
-                        <div className="reveal space-y-6" style={{ transitionDelay: '0.2s' }}>
-                            <p className="text-lg sm:text-xl text-slate-600 leading-relaxed max-w-2xl">
-                                Language AI models depend on high-quality text datasets, but scaling annotation across diverse content sources often introduces inconsistency, bias, and operational complexity.
-                            </p>
-                            <p className="text-base sm:text-lg text-slate-500 leading-relaxed max-w-2xl">
-                                As LLM training datasets grow, semantic interpretation becomes harder to standardize. What begins as a manageable workflow quickly evolves into a bottleneck that slows model improvement.{' '}
-                                <span className="text-blue-600 font-bold">TRANSFORM</span> provides managed text and NLP annotation operations designed to support enterprise language AI through structured governance, human-in-the-loop validation, and scalable delivery.
-                            </p>
-                            <div className="flex flex-col sm:flex-row gap-4 pt-2">
-                                <button
-                                    onClick={scrollToContact}
-                                    className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl shadow-xl shadow-blue-100 transition-all transform hover:scale-105 active:scale-95 text-sm sm:text-base"
-                                >
-                                    Start Your NLP Annotation Assessment
-                                    <ArrowRight className="w-4 h-4" />
-                                </button>
-                                <button
-                                    onClick={scrollToContact}
-                                    className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-slate-200 hover:border-blue-300 text-slate-700 hover:text-blue-600 font-bold rounded-xl transition-all text-sm sm:text-base hover:bg-blue-50"
-                                >
-                                    Talk With a Language Data Specialist
-                                </button>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </section>
