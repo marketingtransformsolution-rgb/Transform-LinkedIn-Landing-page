@@ -1,58 +1,58 @@
 import React, { useEffect, useState } from 'react';
 
 interface CarouselSlide {
-    src: string;
-    alt: string;
+  src: string;
+  alt: string;
 }
 
 const slides: CarouselSlide[] = [
-    { src: '/slider/data-labeling-services.webp', alt: 'Data Labeling Services' },
-    { src: '/slider/text-annotation-1.webp', alt: 'Text Annotation' },
-    { src: '/slider/1_4Hbm5BGrY-JvHyz4F0SK7Q.webp', alt: 'AI Annotation' },
-    { src: '/slider/what-is-geospatial-annotation_.png', alt: 'Geospatial Annotation' },
+  { src: '/slider/data-labeling-services.webp', alt: 'Data Labeling Services' },
+  { src: '/slider/text-annotation-1.webp', alt: 'Text Annotation' },
+  { src: '/slider/1_4Hbm5BGrY-JvHyz4F0SK7Q.webp', alt: 'AI Annotation' },
+  { src: '/slider/what-is-geospatial-annotation_.png', alt: 'Geospatial Annotation' },
 ];
 
 const ImageCarousel: React.FC = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
-        }, 3000); // Change slide every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
+    }, 3000); // Change slide every 3 seconds
 
-        return () => clearInterval(interval);
-    }, []);
+    return () => clearInterval(interval);
+  }, []);
 
-    // Function to determine slide position class
-    const getSlideClass = (index: number) => {
-        const diff = (index - currentIndex + slides.length) % slides.length;
+  // Function to determine slide position class
+  const getSlideClass = (index: number) => {
+    const diff = (index - currentIndex + slides.length) % slides.length;
 
-        if (diff === 0) return 'is-current';
-        if (diff === 1) return 'is-after';
-        if (diff === 2) return 'is-after-2';
-        if (diff === slides.length - 1) return 'is-before';
-        if (diff === slides.length - 2) return 'is-before-2';
-        return '';
-    };
+    if (diff === 0) return 'is-current';
+    if (diff === 1) return 'is-after';
+    if (diff === 2) return 'is-after-2';
+    if (diff === slides.length - 1) return 'is-before';
+    if (diff === slides.length - 2) return 'is-before-2';
+    return '';
+  };
 
-    return (
-        <div className="carousel-container">
-            <div className="carousel-track">
-                {slides.map((slide, index) => (
-                    <div
-                        key={index}
-                        className={`carousel-slide ${getSlideClass(index)}`}
-                    >
-                        <img
-                            src={slide.src}
-                            alt={slide.alt}
-                            className="w-full h-full object-cover pointer-events-none"
-                        />
-                    </div>
-                ))}
-            </div>
+  return (
+    <div className="carousel-container">
+      <div className="carousel-track">
+        {slides.map((slide, index) => (
+          <div
+            key={index}
+            className={`carousel-slide ${getSlideClass(index)}`}
+          >
+            <img
+              src={slide.src}
+              alt={slide.alt}
+              className="w-full h-full object-cover pointer-events-none"
+            />
+          </div>
+        ))}
+      </div>
 
-            <style jsx>{`
+      <style jsx>{`
         .carousel-container {
           position: relative;
           width: 100%;
@@ -102,18 +102,18 @@ const ImageCarousel: React.FC = () => {
           z-index: 6;
         }
 
-        /* Previous slide - visible to the left and behind */
+        /* Previous slide - stacked slightly right and behind */
         .carousel-slide.is-before {
-          transform: translateX(-25%) translateZ(-150px) rotateY(10deg) scale(0.92);
-          opacity: 0.7;
-          z-index: 8;
+          transform: translateX(20%) translateZ(-150px) rotateY(-8deg) scale(0.92);
+          opacity: 0.55;
+          z-index: 7;
         }
 
-        /* Second previous slide - further left and further back */
+        /* Second previous slide - further right and further back */
         .carousel-slide.is-before-2 {
-          transform: translateX(-35%) translateZ(-300px) rotateY(18deg) scale(0.85);
-          opacity: 0.4;
-          z-index: 6;
+          transform: translateX(30%) translateZ(-300px) rotateY(-15deg) scale(0.84);
+          opacity: 0.3;
+          z-index: 5;
         }
 
         /* All other slides - far back and hidden */
@@ -123,8 +123,8 @@ const ImageCarousel: React.FC = () => {
           z-index: 0;
         }
       `}</style>
-        </div>
-    );
+    </div>
+  );
 };
 
 export default ImageCarousel;

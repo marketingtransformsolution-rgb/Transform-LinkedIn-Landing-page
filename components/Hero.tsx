@@ -80,11 +80,11 @@ const Hero: React.FC = () => {
           </div>
 
           {/* Right Column: Clean Image Carousel with 3D Deck Effect */}
-          <div className="relative reveal hidden lg:block ml-12" style={{ transitionDelay: '0.4s' }}>
+          <div className="relative reveal hidden lg:flex lg:items-start lg:justify-center" style={{ transitionDelay: '0.4s' }}>
             {/* Simple Carousel Container without frame */}
-            <div className="relative">
-              {/* Carousel with 3D deck effect */}
-              <div className="relative aspect-[4/3] rounded-2xl overflow-visible shadow-2xl">
+            <div className="relative w-full">
+              {/* Carousel with 3D deck effect — overflow clipped so slides never bleed left */}
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                 <ImageCarousel />
               </div>
 
