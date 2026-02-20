@@ -68,6 +68,11 @@
       opacity: 0.15;
       z-index: 0;
     }
+
+    /* Hide any stray text/script content injected directly into body by tracking pixels */
+    body>*:not(#root):not(script):not(noscript):not(style) {
+      display: none !important;
+    }
   </style>
   <script type="importmap">
 {
