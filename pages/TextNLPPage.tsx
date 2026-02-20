@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { ChevronDown, CheckCircle, ArrowRight, FileText, Shield, Scale, MessageSquare, Users, Brain, AlertTriangle } from 'lucide-react';
+import { ChevronDown, CheckCircle, ArrowRight, FileText, Shield, Scale, MessageSquare, Users, Brain, AlertTriangle, X } from 'lucide-react';
 import ContactForm from '../components/ContactForm';
 import Footer from '../components/Footer';
 
@@ -125,6 +125,8 @@ const FAQItem: React.FC<{ faq: { q: string; a: string }; index: number }> = ({ f
 };
 
 const TextNLPPage: React.FC = () => {
+    const [dialogOpen, setDialogOpen] = useState(false);
+
     useEffect(() => {
         window.scrollTo(0, 0);
         const observer = new IntersectionObserver(
@@ -135,13 +137,37 @@ const TextNLPPage: React.FC = () => {
         return () => observer.disconnect();
     }, []);
 
+    useEffect(() => {
+        if (!dialogOpen) return;
+        const containerId = 'hs-modal-nlp';
+        const load = () => {
+            if (window.hbspt) {
+                window.hbspt.forms.create({
+                    portalId: '245030364',
+                    formId: 'cbcec5da-b477-4077-8a9f-0d32d6fa7672',
+                    region: 'na2',
+                    target: `#${containerId}`,
+                    onFormSubmit: () => { if (window.lintrk) window.lintrk('track', { conversion_id: 24349820 }); },
+                });
+            } else {
+                const s = document.createElement('script');
+                s.src = '//js-na2.hsforms.net/forms/embed/v2.js';
+                s.async = true;
+                s.onload = load;
+                document.body.appendChild(s);
+            }
+        };
+        const timer = setTimeout(load, 80);
+        return () => clearTimeout(timer);
+    }, [dialogOpen]);
+
     return (
         <>
             {/* ── SECTION 1 · HERO ─────────────────────────────────────────── */}
             <section className="relative bg-white pt-28 sm:pt-32 pb-16 sm:pb-20 overflow-hidden">
                 <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full bg-violet-50 opacity-50 blur-3xl pointer-events-none -translate-y-1/3 translate-x-1/4" />
 
-                <div className="max-content w-full relative z-10">
+                <div className="px-20 w-full relative z-10">
                     <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-10 lg:gap-16 items-start">
 
                         {/* LEFT — badge + H1 + body + CTAs */}
@@ -168,28 +194,22 @@ const TextNLPPage: React.FC = () => {
                                 </p>
                                 <div className="flex flex-col sm:flex-row gap-4 pt-2">
                                     <button
-                                        onClick={scrollToContact}
+                                        onClick={() => setDialogOpen(true)}
                                         className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl shadow-xl shadow-blue-100 transition-all transform hover:scale-105 active:scale-95 text-sm sm:text-base"
                                     >
                                         Start Your NLP Annotation Assessment
                                         <ArrowRight className="w-4 h-4" />
                                     </button>
-                                    <button
-                                        onClick={scrollToContact}
-                                        className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-slate-200 hover:border-blue-300 text-slate-700 hover:text-blue-600 font-bold rounded-xl transition-all text-sm sm:text-base hover:bg-blue-50"
-                                    >
-                                        Talk With a Language Data Specialist
-                                    </button>
                                 </div>
                             </div>
                         </div>
 
-                        {/* RIGHT — hero image, top-aligned with H1 */}
-                        <div className="reveal w-full order-last lg:order-none mt-10 lg:mt-0" style={{ transitionDelay: '0.25s' }}>
+                        {/* RIGHT — hero image, stretches to match left column height */}
+                        <div className="reveal w-full order-last lg:order-none mt-10 lg:mt-0 lg:self-stretch flex flex-col" style={{ transitionDelay: '0.25s' }}>
                             <img
-                                src="/Text and Lp annotation/hero-image.webp"
+                                src="/Text and Lp annotation/text-annotation-1.webp"
                                 alt="Text and NLP annotation for enterprise language AI training"
-                                className="w-full h-auto rounded-2xl shadow-xl shadow-slate-200/60 object-cover"
+                                className="w-full flex-1 min-h-[260px] rounded-2xl shadow-xl shadow-slate-200/60 object-cover"
                                 loading="eager"
                                 onError={(e) => {
                                     const t = e.currentTarget;
@@ -471,6 +491,40 @@ const TextNLPPage: React.FC = () => {
 
             <ContactForm />
             <Footer />
+
+            {/* ── HERO CTA MODAL ── */}
+            {dialogOpen && (
+                <div
+                    className="fixed inset-0 z-[999] flex items-center justify-center p-4 sm:p-8"
+                    onClick={(e) => { if (e.target === e.currentTarget) setDialogOpen(false); }}
+                >
+                    <div className="absolute inset-0 bg-slate-900/60 backdrop-blur-sm" />
+                    <div className="relative z-10 w-full max-w-2xl bg-white rounded-3xl shadow-2xl overflow-hidden max-h-[90vh] overflow-y-auto">
+                        <button
+                            onClick={() => setDialogOpen(false)}
+                            className="absolute top-4 right-4 w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center transition-colors z-10"
+                            aria-label="Close"
+                        >
+                            <X className="w-5 h-5 text-slate-600" />
+                        </button>
+                        <div className="p-8 sm:p-12">
+                            <div className="text-center mb-8">
+                                <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.4em] block mb-4">Get in Touch</span>
+                                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-3">Ready to Scale Your Training Data?</h2>
+                                <p className="text-slate-500 text-sm sm:text-base">Submit your project details and an AI operations expert will contact you to discuss a custom annotation workflow.</p>
+                            </div>
+                            <div id="hs-modal-nlp" className="min-h-[320px]">
+                                <div className="flex items-center justify-center py-16">
+                                    <div className="animate-pulse flex flex-col items-center">
+                                        <div className="h-2.5 bg-slate-200 rounded-full w-48 mb-4" />
+                                        <div className="h-2 bg-slate-100 rounded-full w-32" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )}
         </>
     );
 };
