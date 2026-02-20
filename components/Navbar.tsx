@@ -1,10 +1,12 @@
 
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const navigate = useNavigate();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -15,12 +17,21 @@ const Navbar: React.FC = () => {
     }, []);
 
     const menuItems = [
-        { label: 'Solutions', id: 'solutions' },
-        { label: 'Services', id: 'services' },
-        { label: 'Case Studies', id: 'case-studies' },
-        { label: 'About', id: 'about' },
-        { label: 'Contact', id: 'contact-section' },
+        { label: 'Solutions', id: 'solutions', href: null },
+        { label: 'Services', id: 'services', href: '/services/image-video-annotation' },
+        { label: 'Case Studies', id: 'case-studies', href: null },
+        { label: 'About', id: 'about', href: null },
+        { label: 'Contact', id: 'contact-section', href: null },
     ];
+
+    const handleNavItem = (item: { id: string; href: string | null }) => {
+        if (item.href) {
+            navigate(item.href);
+            setIsMobileMenuOpen(false);
+        } else {
+            scrollToSection(item.id);
+        }
+    };
 
     const scrollToSection = (id: string) => {
         const element = document.getElementById(id);
@@ -58,7 +69,7 @@ const Navbar: React.FC = () => {
                         {menuItems.map((item) => (
                             <button
                                 key={item.id}
-                                onClick={() => scrollToSection(item.id)}
+                                onClick={() => handleNavItem(item)}
                                 className="text-sm font-bold text-slate-700 hover:text-blue-600 transition-colors duration-200 uppercase tracking-wide relative group"
                             >
                                 {item.label}
@@ -93,7 +104,7 @@ const Navbar: React.FC = () => {
                             {menuItems.map((item) => (
                                 <button
                                     key={item.id}
-                                    onClick={() => scrollToSection(item.id)}
+                                    onClick={() => handleNavItem(item)}
                                     className="text-left px-4 py-3 text-sm font-bold text-slate-700 hover:text-blue-600 hover:bg-slate-50 rounded-lg transition-all duration-200 uppercase tracking-wide"
                                 >
                                     {item.label}
