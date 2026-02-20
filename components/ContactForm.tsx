@@ -25,11 +25,6 @@ const ContactForm: React.FC = () => {
           formId: "cbcec5da-b477-4077-8a9f-0d32d6fa7672",
           region: "na2",
           target: '#hubspot-form-container',
-          onFormSubmit: function() {
-            if (window.lintrk) {
-              window.lintrk('track', { conversion_id: 24349820 });
-            }
-          }
         });
       }
     };
