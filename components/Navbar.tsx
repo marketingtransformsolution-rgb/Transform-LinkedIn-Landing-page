@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { Menu, X, ChevronDown, Camera, Box, Map } from 'lucide-react';
+import { Menu, X, ChevronDown, Camera, Box, Map, FileText } from 'lucide-react';
 import { useNavigate, useLocation } from 'react-router-dom';
 
 /* ── Services sub-menu items ─────────────────────────────────────────── */
@@ -22,6 +22,12 @@ const subServices = [
         icon: Map,
         label: 'GIS Mapping Annotation',
         desc: 'Road extraction, terrain classification & building footprints',
+    },
+    {
+        href: '/services/text-nlp-annotation',
+        icon: FileText,
+        label: 'Text & NLP Annotation',
+        desc: 'Entity recognition, intent labeling & LLM training data',
     },
 ];
 

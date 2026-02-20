@@ -18,6 +18,7 @@ import Footer from './components/Footer';
 import ImageVideoAnnotationPage from './pages/ImageVideoAnnotationPage';
 import LiDARAnnotationPage from './pages/LiDARAnnotationPage';
 import GISMappingPage from './pages/GISMappingPage';
+import TextNLPPage from './pages/TextNLPPage';
 
 const globalStyles = `
   .reveal {
@@ -113,6 +114,7 @@ const App: React.FC = () => {
         <Route path="/services/image-video-annotation" element={<ImageVideoAnnotationPage />} />
         <Route path="/services/lidar-sensor-annotation" element={<LiDARAnnotationPage />} />
         <Route path="/services/gis-mapping-annotation" element={<GISMappingPage />} />
+        <Route path="/services/text-nlp-annotation" element={<TextNLPPage />} />
       </Routes>
     </div>
   );
