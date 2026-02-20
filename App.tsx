@@ -16,6 +16,7 @@ import FAQ from './components/FAQ';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 import ImageVideoAnnotationPage from './pages/ImageVideoAnnotationPage';
+import LiDARAnnotationPage from './pages/LiDARAnnotationPage';
 
 const globalStyles = `
   .reveal {
@@ -109,6 +110,7 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/services/image-video-annotation" element={<ImageVideoAnnotationPage />} />
+        <Route path="/services/lidar-sensor-annotation" element={<LiDARAnnotationPage />} />
       </Routes>
     </div>
   );
