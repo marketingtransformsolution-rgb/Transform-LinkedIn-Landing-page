@@ -148,7 +148,6 @@ const GISMappingPage: React.FC = () => {
                     formId: 'cbcec5da-b477-4077-8a9f-0d32d6fa7672',
                     region: 'na2',
                     target: `#${containerId}`,
-                    onFormSubmit: () => { if (window.lintrk) window.lintrk('track', { conversion_id: 24349820 }); },
                 });
             } else {
                 const s = document.createElement('script');
@@ -224,7 +223,7 @@ const GISMappingPage: React.FC = () => {
             </section>
 
             {/* ── SECTION 2 · STRATEGIC RISK ───────────────────────────────── */}
-            <section className="section-spacing bg-slate-50 border-y border-slate-100">
+            <section className="section-spacing bg-slate-50 border-y border-slate-100 py-16 sm:py-20 lg:py-24">
                 <div className="max-content">
                     <div className="text-center mb-12 sm:mb-16 reveal">
                         <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.4em] block mb-3">Strategic Risk</span>
