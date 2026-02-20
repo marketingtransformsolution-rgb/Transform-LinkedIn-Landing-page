@@ -45,19 +45,19 @@ const globalStyles = `
     }
   }
   .section-spacing {
-    margin-top: 56px;
-    margin-bottom: 56px;
+    margin-top: 80px;
+    margin-bottom: 80px;
   }
   @media (min-width: 768px) {
     .section-spacing {
-      margin-top: 72px;
-      margin-bottom: 72px;
+      margin-top: 100px;
+      margin-bottom: 100px;
     }
   }
   @media (min-width: 1024px) {
     .section-spacing {
-      margin-top: 120px;
-      margin-bottom: 120px;
+      margin-top: 160px;
+      margin-bottom: 160px;
     }
   }
   .text-readable {
