@@ -102,18 +102,18 @@ const ImageCarousel: React.FC = () => {
           z-index: 6;
         }
 
-        /* Previous slide - stacked slightly right and behind */
+        /* Previous slide - visible to the left and behind */
         .carousel-slide.is-before {
-          transform: translateX(20%) translateZ(-150px) rotateY(-8deg) scale(0.92);
-          opacity: 0.55;
-          z-index: 7;
+          transform: translateX(-25%) translateZ(-150px) rotateY(10deg) scale(0.92);
+          opacity: 0.7;
+          z-index: 8;
         }
 
-        /* Second previous slide - further right and further back */
+        /* Second previous slide - further left and further back */
         .carousel-slide.is-before-2 {
-          transform: translateX(30%) translateZ(-300px) rotateY(-15deg) scale(0.84);
-          opacity: 0.3;
-          z-index: 5;
+          transform: translateX(-35%) translateZ(-300px) rotateY(18deg) scale(0.85);
+          opacity: 0.4;
+          z-index: 6;
         }
 
         /* All other slides - far back and hidden */

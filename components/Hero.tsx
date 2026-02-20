@@ -31,23 +31,23 @@ const Hero: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
 
           {/* Left Column: Text Content */}
-          <div className="space-y-6 sm:space-y-8 lg:space-y-10 text-center lg:text-left">
+          <div className="space-y-4 sm:space-y-6 lg:space-y-7 text-center lg:text-left">
             <div className="reveal" style={{ transitionDelay: '0.1s' }}>
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 mb-4 sm:mb-6">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 mb-3 sm:mb-4">
                 <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span>
                 <span className="text-[9px] sm:text-[10px] font-black text-blue-700 uppercase tracking-widest">Scale Your ML Pipelines</span>
               </div>
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-extrabold tracking-tight leading-[1.1] sm:leading-[1.08] lg:leading-[1.05] text-slate-900">
+              <h1 className="text-2xl sm:text-3xl md:text-[2.25rem] lg:text-[2.6rem] xl:text-5xl font-extrabold tracking-tight leading-[1.1] text-slate-900">
                 Are Your AI Models Slowing Down Because Training Data Cannot Keep Up?
               </h1>
             </div>
 
-            <div className="reveal space-y-4 sm:space-y-6 lg:space-y-8" style={{ transitionDelay: '0.25s' }}>
-              <p className="text-lg sm:text-xl lg:text-2xl font-semibold text-slate-600 leading-tight">
+            <div className="reveal space-y-3 sm:space-y-4 lg:space-y-5" style={{ transitionDelay: '0.25s' }}>
+              <p className="text-base sm:text-lg lg:text-xl font-semibold text-slate-600 leading-snug">
                 Inconsistent labels or unreliable outputs holding back your deployment?
               </p>
 
-              <p className="text-base sm:text-lg lg:text-xl font-medium text-slate-500 leading-relaxed text-readable mx-auto lg:mx-0">
+              <p className="text-sm sm:text-base lg:text-lg font-medium text-slate-500 leading-relaxed text-readable mx-auto lg:mx-0">
                 <a
                   href="https://www.transformsolution.com/"
                   target="_blank"
@@ -58,7 +58,7 @@ const Hero: React.FC = () => {
                 </a> delivers high-precision Human-in-the-Loop data annotation built to bring accuracy and scale to production AI teams.
               </p>
 
-              <div className="pt-2 sm:pt-4 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start items-center">
+              <div className="pt-1 sm:pt-2 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start items-center">
                 <button
                   onClick={handleScrollToContact}
                   className="w-full sm:w-auto h-12 sm:h-14 px-8 sm:px-10 bg-blue-600 hover:bg-blue-700 text-white text-sm sm:text-base font-bold rounded-xl shadow-xl shadow-blue-100 transition-all transform hover:scale-105 active:scale-95"
@@ -80,11 +80,11 @@ const Hero: React.FC = () => {
           </div>
 
           {/* Right Column: Clean Image Carousel with 3D Deck Effect */}
-          <div className="relative reveal hidden lg:flex lg:items-start lg:justify-center" style={{ transitionDelay: '0.4s' }}>
+          <div className="relative reveal hidden lg:block ml-12" style={{ transitionDelay: '0.4s' }}>
             {/* Simple Carousel Container without frame */}
-            <div className="relative w-full">
-              {/* Carousel with 3D deck effect — overflow clipped so slides never bleed left */}
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative">
+              {/* Carousel with 3D deck effect */}
+              <div className="relative aspect-[4/3] rounded-2xl overflow-visible shadow-2xl">
                 <ImageCarousel />
               </div>
 
