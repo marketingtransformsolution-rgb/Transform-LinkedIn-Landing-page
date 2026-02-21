@@ -5,7 +5,6 @@ import React, { useEffect } from 'react';
 declare global {
   interface Window {
     hbspt: any;
-    lintrk: any;
   }
 }
 

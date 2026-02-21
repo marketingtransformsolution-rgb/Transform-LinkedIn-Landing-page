@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Camera, Map, Box, Type } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const services = [
   {
@@ -8,28 +9,32 @@ const services = [
     desc: "Precision bounding boxes, polygons, and keypoint tracking for dynamic computer vision tasks including behavior analysis and obstacle detection.",
     outcome: "Faster model iteration cycles",
     icon: <Camera />,
-    bg: "https://picsum.photos/400/300?1"
+    bg: "https://picsum.photos/400/300?1",
+    link: "/services/image-video-annotation"
   },
   {
     title: "LiDAR and Sensor Annotation",
     desc: "High-resolution 3D point cloud cuboid labeling and semantic segmentation for autonomous vehicles and industrial robotics environments.",
     outcome: "Higher dataset consistency standards",
     icon: <Box />,
-    bg: "https://picsum.photos/400/300?2"
+    bg: "https://picsum.photos/400/300?2",
+    link: "/services/lidar-sensor-annotation"
   },
   {
     title: "GIS Mapping Annotation",
     desc: "Detailed cartographic labeling, road network extraction, and land-use classification using multi-spectral satellite and aerial imagery.",
     outcome: "Superior spatial accuracy rates",
     icon: <Map />,
-    bg: "https://picsum.photos/400/300?3"
+    bg: "https://picsum.photos/400/300?3",
+    link: "/services/gis-mapping-annotation"
   },
   {
     title: "Text and NLP Annotation",
     desc: "Entity recognition, sentiment analysis, and intent classification for large language models and intelligent document processing systems.",
     outcome: "Increased semantic depth",
     icon: <Type />,
-    bg: "https://picsum.photos/400/300?4"
+    bg: "https://picsum.photos/400/300?4",
+    link: "/services/text-nlp-annotation"
   }
 ];
 
@@ -44,9 +49,10 @@ const ServicesGrid: React.FC = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
           {services.map((service, index) => (
-            <div
+            <Link
+              to={service.link}
               key={index}
-              className="reveal relative bg-white rounded-2xl overflow-hidden border border-slate-100 h-auto sm:h-[280px] flex flex-col justify-end p-6 sm:p-8 shadow-sm"
+              className="reveal relative bg-white rounded-2xl overflow-hidden border border-slate-100 h-auto sm:h-[280px] flex flex-col justify-end p-6 sm:p-8 shadow-sm hover:shadow-md hover:border-blue-200 transition-all duration-200 no-underline"
               style={{ transitionDelay: `${index * 0.1}s` }}
             >
               {/* Background with subtle watermark-style blur - Static, no hover change */}
@@ -72,7 +78,7 @@ const ServicesGrid: React.FC = () => {
                   </p>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
