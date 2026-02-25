@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import TrustStrip from './components/TrustStrip';
 import SolutionOverview from './components/SolutionOverview';
+import ClientLogos from './components/ClientLogos';
 import PainCards from './components/PainCards';
 import Workflow from './components/Workflow';
 import ServicesGrid from './components/ServicesGrid';
@@ -90,6 +91,7 @@ const HomePage: React.FC = () => {
       <Hero />
       <TrustStrip />
       <SolutionOverview />
+      <ClientLogos />
       {/* <PainCards /> */}
       <Workflow />
       <ServicesGrid />
