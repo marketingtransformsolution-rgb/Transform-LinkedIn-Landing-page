@@ -52,7 +52,7 @@ const ImageCarousel: React.FC = () => {
         ))}
       </div>
 
-      <style jsx>{`
+      <style>{`
         .carousel-container {
           position: relative;
           width: 100%;
