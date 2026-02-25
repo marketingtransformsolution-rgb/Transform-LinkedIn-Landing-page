@@ -180,8 +180,8 @@ const GISMappingPage: React.FC = () => {
                             </div>
                             <div className="reveal" style={{ transitionDelay: '0.1s' }}>
                                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] xl:text-6xl font-extrabold tracking-tight leading-[1.07] text-slate-900 mb-6 sm:mb-8">
-                                    GIS Mapping Annotation Operations Built for{' '}
-                                    <span className="text-blue-600">Enterprise Geospatial AI</span>
+                                    GIS mapping annotation operations built for{' '}
+                                    <span className="text-blue-600">enterprise geospatial AI</span>
                                 </h1>
                             </div>
                             <div className="reveal space-y-5" style={{ transitionDelay: '0.18s' }}>
@@ -228,7 +228,7 @@ const GISMappingPage: React.FC = () => {
                     <div className="text-center mb-12 sm:mb-16 reveal">
                         <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.4em] block mb-3">Strategic Risk</span>
                         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-4">
-                            When GIS Annotation Becomes a Strategic Risk
+                            When GIS annotation becomes a strategic risk
                         </h2>
                         <p className="text-slate-500 max-w-xl mx-auto text-sm sm:text-base">
                             Geospatial annotation challenges often appear gradually but create significant downstream impact on AI performance.
@@ -258,7 +258,7 @@ const GISMappingPage: React.FC = () => {
                     <div className="text-center mb-12 sm:mb-16 reveal">
                         <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.4em] block mb-3">Our Approach</span>
                         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-4">
-                            How TRANSFORM Solves Enterprise GIS Annotation Challenges
+                            How TRANSFORM solves enterprise GIS annotation challenges
                         </h2>
                         <p className="text-slate-500 max-w-xl mx-auto text-sm sm:text-base">
                             TRANSFORM treats geospatial annotation as an operational discipline rather than a production task.
@@ -298,7 +298,7 @@ const GISMappingPage: React.FC = () => {
                     <div className="text-center mb-12 sm:mb-16 reveal">
                         <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.4em] block mb-3">Capabilities</span>
                         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-4">
-                            GIS Mapping Annotation Capabilities <br className="hidden sm:block" />Designed for Spatial Intelligence
+                            GIS mapping annotation capabilities <br className="hidden sm:block" />designed for spatial intelligence
                         </h2>
                         <p className="text-slate-500 max-w-xl mx-auto text-sm sm:text-base">
                             Each workflow is executed through structured QA governance to maintain mapping precision across large datasets.
@@ -324,7 +324,7 @@ const GISMappingPage: React.FC = () => {
                     <div className="text-center mb-12 sm:mb-16 reveal">
                         <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.4em] block mb-3">Real World Scenarios</span>
                         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-4">
-                            Real Deployment Scenarios in Geospatial AI
+                            Real deployment scenarios in geospatial AI
                         </h2>
                         <p className="text-slate-500 max-w-lg mx-auto text-sm sm:text-base">
                             These examples reflect common operational challenges faced by US-based geospatial AI companies.
@@ -355,7 +355,7 @@ const GISMappingPage: React.FC = () => {
                         <div className="reveal">
                             <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.4em] block mb-3">Quality Governance</span>
                             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-5">
-                                Human-in-the-Loop Quality Governance for GIS Data
+                                Human-in-the-loop quality governance for GIS data
                             </h2>
                             <p className="text-slate-500 text-sm sm:text-base leading-relaxed mb-8">
                                 Automated tools accelerate geospatial labeling but cannot fully interpret complex spatial patterns. TRANSFORM integrates expert review layers to ensure consistent mapping annotation.
@@ -403,7 +403,7 @@ const GISMappingPage: React.FC = () => {
                     <div className="text-center mb-12 reveal">
                         <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.4em] block mb-3">Why TRANSFORM</span>
                         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-4">
-                            Why Geospatial AI Teams Choose TRANSFORM
+                            Why geospatial AI teams choose TRANSFORM
                         </h2>
                         <p className="text-slate-500 max-w-xl mx-auto text-sm sm:text-base">
                             Geospatial companies need annotation partners who understand mapping complexity, spatial accuracy, and long-term dataset governance.
@@ -416,7 +416,7 @@ const GISMappingPage: React.FC = () => {
                             </div>
                             <div>
                                 <p className="text-[10px] font-black text-blue-600 uppercase tracking-widest mb-1">Operational Scenario</p>
-                                <h3 className="font-bold text-slate-900 text-lg">Standardized Road Labeling Governance</h3>
+                                <h3 className="font-bold text-slate-900 text-lg">Standardized road labeling governance</h3>
                             </div>
                         </div>
                         <blockquote className="text-slate-600 text-base sm:text-lg leading-relaxed border-l-4 border-blue-100 pl-6 italic">
@@ -450,7 +450,7 @@ const GISMappingPage: React.FC = () => {
                         <div className="relative z-10">
                             <span className="text-[10px] font-black text-blue-200 uppercase tracking-[0.4em] block mb-4">Get Started</span>
                             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white mb-5">
-                                Strengthen the Accuracy of Your Geospatial AI Models
+                                Strengthen the accuracy of your geospatial AI models
                             </h2>
                             <p className="text-blue-100 max-w-xl mx-auto text-sm sm:text-base leading-relaxed mb-8">
                                 If GIS annotation workflows are slowing analysis or creating uncertainty in mapping data, an operations assessment can identify governance gaps and improve spatial dataset reliability.
@@ -480,7 +480,7 @@ const GISMappingPage: React.FC = () => {
                 <div className="max-w-[800px] mx-auto px-4 sm:px-6">
                     <div className="text-center mb-12 sm:mb-16 reveal">
                         <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.4em] block mb-3">FAQ</span>
-                        <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900">Frequently Asked Questions</h2>
+                        <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900">Frequently asked questions</h2>
                         <p className="text-slate-500 mt-2 text-sm sm:text-base">Common questions on enterprise GIS mapping annotation.</p>
                     </div>
                     <div className="space-y-4">
@@ -510,7 +510,7 @@ const GISMappingPage: React.FC = () => {
                         <div className="p-8 sm:p-12">
                             <div className="text-center mb-8">
                                 <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.4em] block mb-4">Get in Touch</span>
-                                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-3">Ready to Scale Your Training Data?</h2>
+                                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-3">Ready to scale your training data?</h2>
                                 <p className="text-slate-500 text-sm sm:text-base">Submit your project details and an AI operations expert will contact you to discuss a custom annotation workflow.</p>
                             </div>
                             <div id="hs-modal-gis" className="min-h-[320px]">

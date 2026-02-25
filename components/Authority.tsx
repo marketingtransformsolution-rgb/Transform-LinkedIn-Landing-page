@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Mail, Phone, MapPin, Award, ShieldCheck, Database, Globe } from 'lucide-react';
+import { Award, ShieldCheck, Globe } from 'lucide-react';
 
 const Authority: React.FC = () => {
   return (
@@ -27,7 +27,7 @@ const Authority: React.FC = () => {
             <Globe className="w-3 h-3 text-blue-600" />
             <span className="text-[10px] font-bold text-blue-700 uppercase tracking-widest">Global Operations</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-6 sm:mb-8">Built for Global Scale</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-6 sm:mb-8">Built for global scale</h2>
           <div className="space-y-4 sm:space-y-6 text-slate-600 leading-relaxed text-readable text-base sm:text-lg">
             <p>
               TRANSFORM Solutions was founded on the principle that data accuracy is the single
@@ -52,8 +52,8 @@ const Authority: React.FC = () => {
               <p className="text-[9px] sm:text-[10px] text-slate-400 uppercase font-black mt-1 tracking-widest">Years Expertise</p>
             </div>
             <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
-              <p className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tighter">500M+</p>
-              <p className="text-[9px] sm:text-[10px] text-slate-400 uppercase font-black mt-1 tracking-widest">Labels Verified</p>
+              <p className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tighter">50M+</p>
+              <p className="text-[9px] sm:text-[10px] text-slate-400 uppercase font-black mt-1 tracking-widest">Annotations Delivered</p>
             </div>
           </div>
 
@@ -79,56 +79,6 @@ const Authority: React.FC = () => {
             </div>
           </div>
 
-          {/* Contact Details with Enhanced Icons */}
-          <div className="pt-6 space-y-6 reveal border-t border-slate-200" style={{ transitionDelay: '0.4s' }}>
-            <div className="flex items-start gap-5 group">
-              <div className="w-12 h-12 rounded-xl bg-white border border-slate-200 shadow-sm flex items-center justify-center text-blue-600 group-hover:border-blue-400 transition-colors shrink-0">
-                <MapPin className="w-5 h-5" />
-              </div>
-              <div className="pt-1">
-                <p className="text-[11px] font-black text-slate-400 uppercase tracking-widest mb-1">Headquarters</p>
-                <p className="text-sm font-bold text-slate-900 leading-snug">1005 Congress Avenue, Suite 925<br />Austin, TX 78701</p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-5 group">
-              <div className="w-12 h-12 rounded-xl bg-white border border-slate-200 shadow-sm flex items-center justify-center text-blue-600 group-hover:border-blue-400 transition-colors shrink-0">
-                <Phone className="w-5 h-5" />
-              </div>
-              <div className="pt-1">
-                <p className="text-[11px] font-black text-slate-400 uppercase tracking-widest mb-1">Inquiries</p>
-                <p className="text-sm font-bold text-slate-900">(512) 955 8808</p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-5 group">
-              <div className="w-12 h-12 rounded-xl bg-white border border-slate-200 shadow-sm flex items-center justify-center text-blue-600 group-hover:border-blue-400 transition-colors shrink-0">
-                <Mail className="w-5 h-5" />
-              </div>
-              <div className="pt-1">
-                <p className="text-[11px] font-black text-slate-400 uppercase tracking-widest mb-1">Partnerships</p>
-                <p className="text-sm font-bold text-slate-900">sales@transformsolution.com</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Credibility Badges / Industry Logos */}
-          <div className="pt-8 flex items-center gap-8 opacity-40 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500 reveal" style={{ transitionDelay: '0.5s' }}>
-            <img
-              src="https://clutch.co/sites/all/themes/clutch/logo.svg"
-              alt="Clutch Logo"
-              className="h-5 w-auto"
-              onError={(e) => (e.currentTarget.style.display = 'none')}
-            />
-            <img
-              src="https://www.goodfirms.co/assets/img/logo.svg"
-              alt="GoodFirms Logo"
-              className="h-6 w-auto"
-              onError={(e) => (e.currentTarget.style.display = 'none')}
-            />
-            <div className="h-4 w-px bg-slate-300"></div>
-            <span className="text-[9px] font-black text-slate-400 uppercase tracking-[0.2em]">Verified reviews</span>
-          </div>
         </div>
       </div>
     </section>

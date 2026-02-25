@@ -31,7 +31,7 @@ const Conversion: React.FC = () => {
 
       <div className="max-w-[680px] mx-auto px-4 sm:px-6 text-center relative z-10">
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-6 sm:mb-8 reveal">
-          Start With A Structured Review Of Your Annotation Workflow
+          Start with a structured review of your annotation workflow
         </h2>
         <p className="text-slate-600 text-base sm:text-lg mb-8 sm:mb-10 lg:mb-12 text-readable mx-auto reveal" style={{ transitionDelay: '0.1s' }}>
           Stop guessing why your model accuracy is plateauing. Speak with an

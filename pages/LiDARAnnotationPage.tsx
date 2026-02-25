@@ -198,8 +198,8 @@ const LiDARAnnotationPage: React.FC = () => {
 
                             <div className="reveal" style={{ transitionDelay: '0.1s' }}>
                                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] xl:text-6xl font-extrabold tracking-tight leading-[1.07] text-slate-900 mb-6 sm:mb-8">
-                                    LiDAR and Sensor Annotation Operations Built for{' '}
-                                    <span className="text-blue-600">High-Fidelity Spatial AI</span>
+                                    LiDAR and sensor annotation operations built for{' '}
+                                    <span className="text-blue-600">high-fidelity spatial AI</span>
                                 </h1>
                             </div>
 
@@ -247,7 +247,7 @@ const LiDARAnnotationPage: React.FC = () => {
                     <div className="text-center mb-12 sm:mb-16 reveal">
                         <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.4em] block mb-3">Deployment Risk</span>
                         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-4">
-                            When Sensor Annotation Becomes a Deployment Risk
+                            When sensor annotation becomes a deployment risk
                         </h2>
                         <p className="text-slate-500 max-w-xl mx-auto text-sm sm:text-base">
                             LiDAR annotation is not simply a data task. It directly influences perception accuracy and safety performance.
@@ -282,7 +282,7 @@ const LiDARAnnotationPage: React.FC = () => {
                     <div className="text-center mb-12 sm:mb-16 reveal">
                         <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.4em] block mb-3">Our Approach</span>
                         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-4">
-                            How TRANSFORM Solves High-Precision Annotation Challenges
+                            How TRANSFORM solves high-precision annotation challenges
                         </h2>
                         <p className="text-slate-500 max-w-xl mx-auto text-sm sm:text-base">
                             TRANSFORM builds annotation operations focused on spatial accuracy, safety alignment, and long-term dataset reliability.
@@ -329,7 +329,7 @@ const LiDARAnnotationPage: React.FC = () => {
                     <div className="text-center mb-12 sm:mb-16 reveal">
                         <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.4em] block mb-3">Capabilities</span>
                         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-4">
-                            LiDAR and Sensor Annotation Capabilities <br className="hidden sm:block" />Designed for Autonomous AI
+                            LiDAR and sensor annotation capabilities <br className="hidden sm:block" />designed for autonomous AI
                         </h2>
                         <p className="text-slate-500 max-w-xl mx-auto text-sm sm:text-base">
                             Each workflow is governed by structured QA processes that prioritize spatial accuracy and consistency.
@@ -360,7 +360,7 @@ const LiDARAnnotationPage: React.FC = () => {
                     <div className="text-center mb-12 sm:mb-16 reveal">
                         <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.4em] block mb-3">Real World Scenarios</span>
                         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-4">
-                            Real Deployment Scenarios in Autonomy and Robotics
+                            Real deployment scenarios in autonomy and robotics
                         </h2>
                         <p className="text-slate-500 max-w-lg mx-auto text-sm sm:text-base">
                             These scenarios reflect common operational challenges faced by spatial AI teams across the US market.
@@ -397,7 +397,7 @@ const LiDARAnnotationPage: React.FC = () => {
                         <div className="reveal">
                             <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.4em] block mb-3">Quality Governance</span>
                             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-5">
-                                Human-in-the-Loop Quality Governance for Spatial Data
+                                Human-in-the-loop quality governance for spatial data
                             </h2>
                             <p className="text-slate-500 text-sm sm:text-base leading-relaxed mb-8">
                                 Automated annotation tools accelerate labeling but cannot fully manage complex spatial edge cases. TRANSFORM integrates expert review layers that validate data accuracy at multiple checkpoints.
@@ -427,7 +427,7 @@ const LiDARAnnotationPage: React.FC = () => {
                             {[
                                 { stat: '99.5%+', label: 'Spatial Accuracy Rate' },
                                 { stat: '3D', label: 'Point Cloud Expertise' },
-                                { stat: '50M+', label: 'LiDAR Frames Labeled' },
+                                { stat: '50M+', label: 'Annotations Delivered' },
                                 { stat: '24/7', label: 'Operational Support' },
                             ].map((s, i) => (
                                 <div key={i} className="bg-white border border-slate-200 rounded-2xl p-6 text-center hover:border-blue-200 hover:shadow-md transition-all">
@@ -446,7 +446,7 @@ const LiDARAnnotationPage: React.FC = () => {
                     <div className="text-center mb-12 reveal">
                         <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.4em] block mb-3">Why TRANSFORM</span>
                         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-4">
-                            Why Autonomous AI Teams Choose TRANSFORM
+                            Why autonomous AI teams choose TRANSFORM
                         </h2>
                         <p className="text-slate-500 max-w-xl mx-auto text-sm sm:text-base">
                             Enterprise autonomy teams seek partners who understand safety requirements and spatial data complexity.
@@ -460,7 +460,7 @@ const LiDARAnnotationPage: React.FC = () => {
                             </div>
                             <div>
                                 <p className="text-[10px] font-black text-blue-600 uppercase tracking-widest mb-1">Operational Scenario</p>
-                                <h3 className="font-bold text-slate-900 text-lg">Structured LiDAR Annotation Governance</h3>
+                                <h3 className="font-bold text-slate-900 text-lg">Structured LiDAR annotation governance</h3>
                             </div>
                         </div>
                         <blockquote className="text-slate-600 text-base sm:text-lg leading-relaxed border-l-4 border-blue-100 pl-6 italic">
@@ -495,7 +495,7 @@ const LiDARAnnotationPage: React.FC = () => {
                         <div className="relative z-10">
                             <span className="text-[10px] font-black text-blue-200 uppercase tracking-[0.4em] block mb-4">Get Started</span>
                             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white mb-5">
-                                Stabilize Your Spatial Data Pipeline Before It Slows Deployment
+                                Stabilize your spatial data pipeline before it slows deployment
                             </h2>
                             <p className="text-blue-100 max-w-xl mx-auto text-sm sm:text-base leading-relaxed mb-8">
                                 If LiDAR annotation complexity is increasing faster than internal teams can manage, a structured operations assessment can identify where governance and workflow improvements will reduce risk and improve dataset accuracy.
@@ -525,7 +525,7 @@ const LiDARAnnotationPage: React.FC = () => {
                 <div className="max-w-[800px] mx-auto px-4 sm:px-6">
                     <div className="text-center mb-12 sm:mb-16 reveal">
                         <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.4em] block mb-3">FAQ</span>
-                        <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900">Frequently Asked Questions</h2>
+                        <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900">Frequently asked questions</h2>
                         <p className="text-slate-500 mt-2 text-sm sm:text-base">Common questions on LiDAR and sensor annotation operations.</p>
                     </div>
                     <div className="space-y-4">
@@ -560,7 +560,7 @@ const LiDARAnnotationPage: React.FC = () => {
                         <div className="p-8 sm:p-12">
                             <div className="text-center mb-8">
                                 <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.4em] block mb-4">Get in Touch</span>
-                                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-3">Ready to Scale Your Training Data?</h2>
+                                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-3">Ready to scale your training data?</h2>
                                 <p className="text-slate-500 text-sm sm:text-base">Submit your project details and an AI operations expert will contact you to discuss a custom annotation workflow.</p>
                             </div>
                             <div id="hs-modal-lidar" className="min-h-[320px]">

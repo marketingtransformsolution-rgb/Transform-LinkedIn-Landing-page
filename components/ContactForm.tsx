@@ -42,7 +42,7 @@ const ContactForm: React.FC = () => {
               GET IN TOUCH
             </span>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-4 sm:mb-6">
-              Ready to Scale Your Training Data?
+              Ready to scale your training data?
             </h2>
             <p className="text-slate-500 font-medium text-sm sm:text-base">
               Submit your project details and an AI operations expert will contact you to discuss a custom annotation workflow.

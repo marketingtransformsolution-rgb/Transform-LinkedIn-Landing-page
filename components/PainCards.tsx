@@ -42,8 +42,8 @@ const PainCards: React.FC = () => {
       <div className="max-content">
         <div className="text-center mb-12 sm:mb-16 reveal">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-3 sm:mb-4 px-4 sm:px-0">
-            Scaling AI Fails When Annotation Workflows <br className="hidden md:block" />
-            Cannot Keep Up
+            Scaling AI fails when annotation workflows <br className="hidden md:block" />
+            cannot keep up
           </h2>
           <p className="text-slate-500 font-medium text-sm sm:text-base px-4 sm:px-0">Identify the bottlenecks preventing your models from reaching deployment.</p>
         </div>

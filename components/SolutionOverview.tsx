@@ -10,7 +10,7 @@ const SolutionOverview: React.FC = () => {
           DATA ANNOTATION SERVICES
         </span>
         <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-extrabold text-slate-900 leading-tight mb-4 sm:mb-6">
-          For ML Teams Who Need Production Grade Training Data
+          For ML teams who need production grade training data
         </h2>
         <p className="text-slate-600 text-base sm:text-lg lg:text-xl text-readable mx-auto px-4 sm:px-0">
           Deploy AI models faster while your engineering teams focus on architecture and optimization.
@@ -25,7 +25,7 @@ const SolutionOverview: React.FC = () => {
         {/* Left Side Content Block */}
         <div className="space-y-8 reveal" style={{ transitionDelay: '0.1s' }}>
           <h3 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-slate-900 leading-tight">
-            We Fix AI Model Accuracy Problems
+            We fix AI model accuracy problems
           </h3>
           <div className="space-y-4 sm:space-y-6 text-slate-600 text-readable text-base sm:text-lg">
             <p>
@@ -53,7 +53,7 @@ const SolutionOverview: React.FC = () => {
                   <div className="flex items-center gap-3">
                     <span className="w-2.5 h-2.5 rounded-full bg-rose-500"></span>
                     <h4 className="text-slate-900 font-extrabold text-lg sm:text-xl lg:text-2xl uppercase tracking-tight">
-                      The Challenge
+                      The challenge
                     </h4>
                   </div>
                   <div className="h-1 w-16 bg-rose-100 rounded-full"></div>
@@ -81,7 +81,7 @@ const SolutionOverview: React.FC = () => {
                   <div className="flex items-center gap-3">
                     <span className="w-2.5 h-2.5 rounded-full bg-blue-600"></span>
                     <h4 className="text-blue-600 font-extrabold text-xl lg:text-2xl uppercase tracking-tight">
-                      Our Solution
+                      Our solution
                     </h4>
                   </div>
                   <div className="h-1 w-16 bg-blue-200 rounded-full"></div>

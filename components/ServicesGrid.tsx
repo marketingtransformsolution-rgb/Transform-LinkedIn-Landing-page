@@ -43,7 +43,7 @@ const ServicesGrid: React.FC = () => {
     <section id="services" className="section-spacing gradient-bg">
       <div className="max-content">
         <div className="text-center mb-12 sm:mb-16 reveal">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-3 sm:mb-4">Core Technical Capabilities</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-3 sm:mb-4">Core technical capabilities</h2>
           <p className="text-slate-500 text-sm sm:text-base px-4 sm:px-0">End-to-end expertise across all major data modalities for production AI.</p>
         </div>
 

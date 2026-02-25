@@ -14,7 +14,7 @@ const cases = [
     label: "Faster Turnaround",
     challenge: "An autonomous trucking startup had a 3-week data backlog, stalling their weekly model deployment and safety validation cycles.",
     solution: "We implemented an automated triage system paired with 24/7 expert labeling cycles to clear the backlog and move to a 48-hour SLA.",
-    results: ["40% Faster Release Cycle", "5k Frames Labeled Per Day"]
+    results: ["40% Faster Release Cycle", "2k Frames Labeled Per Day"]
   },
   {
     metric: "52%",
@@ -30,7 +30,7 @@ const CaseStudies: React.FC = () => {
     <section id="case-studies" className="section-spacing bg-white overflow-hidden">
       <div className="max-content">
         <div className="mb-12 sm:mb-16 reveal">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900">Proven Performance Metrics</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900">Proven performance metrics</h2>
           <p className="text-slate-500 mt-3 sm:mt-4 text-sm sm:text-base">Real results from complex global annotation projects.</p>
         </div>
 
@@ -41,7 +41,7 @@ const CaseStudies: React.FC = () => {
               className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-12 items-center reveal group"
             >
               {/* Left: Metric */}
-              <div className="lg:col-span-4 text-center lg:text-left">
+              <div className="lg:col-span-4 text-center">
                 <span className="block text-6xl sm:text-7xl lg:text-8xl xl:text-9xl font-black text-slate-900 tracking-tighter group-hover:text-blue-600 transition-colors duration-500">
                   {item.metric}
                 </span>
@@ -51,11 +51,11 @@ const CaseStudies: React.FC = () => {
               {/* Right: Explanation */}
               <div className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-10 lg:gap-12">
                 <div>
-                  <h4 className="text-xs font-bold text-blue-600 uppercase mb-3 tracking-wider">The Challenge</h4>
+                  <h4 className="text-xs font-bold text-blue-600 uppercase mb-3 tracking-wider">The challenge</h4>
                   <p className="text-slate-600 text-sm leading-relaxed">{item.challenge}</p>
                 </div>
                 <div>
-                  <h4 className="text-xs font-bold text-blue-600 uppercase mb-3 tracking-wider">The Solution</h4>
+                  <h4 className="text-xs font-bold text-blue-600 uppercase mb-3 tracking-wider">The solution</h4>
                   <p className="text-slate-600 text-sm leading-relaxed">{item.solution}</p>
                 </div>
                 <div className="md:col-span-2 pt-6 border-t border-slate-100 flex flex-wrap gap-8">

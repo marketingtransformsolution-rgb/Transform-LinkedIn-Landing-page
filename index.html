@@ -69,11 +69,34 @@
       z-index: 0;
     }
 
-    /* Hide any stray text/script content injected directly into body by tracking pixels */
+    /* Hide any stray elements injected directly into body by tracking pixels */
     body>*:not(#root):not(script):not(noscript):not(style) {
       display: none !important;
     }
   </style>
+  <script>
+    /**
+     * WORKAROUND: Some tracking tags (likely from GTM) may be misconfigured 
+     * and injecting raw text nodes into the body. This script removes them.
+     */
+    const cleanStrayText = () => {
+      document.body.childNodes.forEach(node => {
+        if (node.nodeType === Node.TEXT_NODE && node.textContent.includes('window.lintrk')) {
+          node.remove();
+        }
+      });
+    };
+    // Run immediately and also observe for dynamic injections
+    window.addEventListener('DOMContentLoaded', cleanStrayText);
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach(m => m.addedNodes.forEach(node => {
+        if (node.nodeType === Node.TEXT_NODE && node.textContent.includes('window.lintrk')) {
+          node.remove();
+        }
+      }));
+    });
+    observer.observe(document.documentElement, { childList: true, subtree: true });
+  </script>
   <script type="importmap">
 {
   "imports": {

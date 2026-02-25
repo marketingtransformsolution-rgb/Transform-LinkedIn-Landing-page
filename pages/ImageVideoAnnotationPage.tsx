@@ -197,8 +197,8 @@ const ImageVideoAnnotationPage: React.FC = () => {
 
                             <div className="reveal" style={{ transitionDelay: '0.1s' }}>
                                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] xl:text-6xl font-extrabold tracking-tight leading-[1.07] text-slate-900 mb-6 sm:mb-8">
-                                    Image and Video Annotation Operations Built for{' '}
-                                    <span className="text-blue-600">Production Scale AI</span>
+                                    Image and video annotation operations built for{' '}
+                                    <span className="text-blue-600">production scale AI</span>
                                 </h1>
                             </div>
 
@@ -246,7 +246,7 @@ const ImageVideoAnnotationPage: React.FC = () => {
                     <div className="text-center mb-12 sm:mb-16 reveal">
                         <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.4em] block mb-3">Business Risk</span>
                         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-4">
-                            When Annotation Becomes a Business Risk
+                            When annotation becomes a business risk
                         </h2>
                         <p className="text-slate-500 max-w-xl mx-auto text-sm sm:text-base">
                             Many organizations initially treat annotation as a production task. Over time it evolves into a strategic challenge that directly impacts product performance.
@@ -281,7 +281,7 @@ const ImageVideoAnnotationPage: React.FC = () => {
                     <div className="text-center mb-12 sm:mb-16 reveal">
                         <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.4em] block mb-3">Our Approach</span>
                         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-4">
-                            How TRANSFORM Solves Enterprise Annotation Challenges
+                            How TRANSFORM solves enterprise annotation challenges
                         </h2>
                         <p className="text-slate-500 max-w-xl mx-auto text-sm sm:text-base">
                             TRANSFORM approaches annotation as a managed operations discipline rather than a simple labeling task. Every workflow is structured to support long-term AI growth.
@@ -328,7 +328,7 @@ const ImageVideoAnnotationPage: React.FC = () => {
                     <div className="text-center mb-12 sm:mb-16 reveal">
                         <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.4em] block mb-3">Capabilities</span>
                         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-4">
-                            Image and Video Annotation Capabilities <br className="hidden sm:block" />Designed for Production AI
+                            Image and video annotation capabilities <br className="hidden sm:block" />designed for production AI
                         </h2>
                         <p className="text-slate-500 max-w-xl mx-auto text-sm sm:text-base">
                             Each capability is implemented through structured workflows that prioritize data consistency and operational efficiency rather than volume-driven delivery.
@@ -359,7 +359,7 @@ const ImageVideoAnnotationPage: React.FC = () => {
                     <div className="text-center mb-12 sm:mb-16 reveal">
                         <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.4em] block mb-3">Real World Scenarios</span>
                         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-4">
-                            Real Deployment Scenarios Enterprise Teams Face
+                            Real deployment scenarios enterprise teams face
                         </h2>
                         <p className="text-slate-500 max-w-lg mx-auto text-sm sm:text-base">
                             These scenarios reflect real operational challenges faced by AI teams scaling computer vision products across North America.
@@ -396,7 +396,7 @@ const ImageVideoAnnotationPage: React.FC = () => {
                         <div className="reveal">
                             <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.4em] block mb-3">Quality Governance</span>
                             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-5">
-                                Human-in-the-Loop Quality Governance
+                                Human-in-the-loop quality governance
                             </h2>
                             <p className="text-slate-500 text-sm sm:text-base leading-relaxed mb-8">
                                 Automation alone cannot maintain annotation quality at enterprise scale. TRANSFORM integrates trained specialists with structured QA layers to ensure consistent training data delivery.
@@ -415,7 +415,7 @@ const ImageVideoAnnotationPage: React.FC = () => {
                             {[
                                 { stat: '99%+', label: 'Annotation Accuracy' },
                                 { stat: '3x', label: 'Faster QA Cycles' },
-                                { stat: '500M+', label: 'Annotations Delivered' },
+                                { stat: '50M+', label: 'Annotations Delivered' },
                                 { stat: '24/7', label: 'Operational Support' },
                             ].map((s, i) => (
                                 <div key={i} className="bg-white border border-slate-200 rounded-2xl p-6 text-center hover:border-blue-200 hover:shadow-md transition-all">
@@ -434,7 +434,7 @@ const ImageVideoAnnotationPage: React.FC = () => {
                     <div className="text-center mb-12 reveal">
                         <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.4em] block mb-3">Why TRANSFORM</span>
                         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-4">
-                            Why Enterprise AI Teams Choose TRANSFORM
+                            Why enterprise AI teams choose TRANSFORM
                         </h2>
                         <p className="text-slate-500 max-w-xl mx-auto text-sm sm:text-base">
                             Enterprise buyers increasingly look for partners who can take ownership of annotation operations instead of simply providing labor.
@@ -448,7 +448,7 @@ const ImageVideoAnnotationPage: React.FC = () => {
                             </div>
                             <div>
                                 <p className="text-[10px] font-black text-blue-600 uppercase tracking-widest mb-1">Operational Scenario</p>
-                                <h3 className="font-bold text-slate-900 text-lg">Centralized Annotation Governance</h3>
+                                <h3 className="font-bold text-slate-900 text-lg">Centralized annotation governance</h3>
                             </div>
                         </div>
                         <blockquote className="text-slate-600 text-base sm:text-lg leading-relaxed border-l-4 border-blue-100 pl-6 italic">
@@ -483,7 +483,7 @@ const ImageVideoAnnotationPage: React.FC = () => {
                         <div className="relative z-10">
                             <span className="text-[10px] font-black text-blue-200 uppercase tracking-[0.4em] block mb-4">Get Started</span>
                             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white mb-5">
-                                Remove Annotation Bottlenecks from Your Computer Vision Roadmap
+                                Remove annotation bottlenecks from your computer vision roadmap
                             </h2>
                             <p className="text-blue-100 max-w-xl mx-auto text-sm sm:text-base leading-relaxed mb-8">
                                 If annotation workflows are slowing deployment or creating quality uncertainty, an operations assessment can identify where governance improvements and process changes will stabilize your training data pipeline.
@@ -513,7 +513,7 @@ const ImageVideoAnnotationPage: React.FC = () => {
                 <div className="max-w-[800px] mx-auto px-4 sm:px-6">
                     <div className="text-center mb-12 sm:mb-16 reveal">
                         <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.4em] block mb-3">FAQ</span>
-                        <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900">Frequently Asked Questions</h2>
+                        <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900">Frequently asked questions</h2>
                         <p className="text-slate-500 mt-2 text-sm sm:text-base">Common questions on enterprise image and video annotation operations.</p>
                     </div>
                     <div className="space-y-4">
@@ -548,7 +548,7 @@ const ImageVideoAnnotationPage: React.FC = () => {
                         <div className="p-8 sm:p-12">
                             <div className="text-center mb-8">
                                 <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.4em] block mb-4">Get in Touch</span>
-                                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-3">Ready to Scale Your Training Data?</h2>
+                                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-3">Ready to scale your training data?</h2>
                                 <p className="text-slate-500 text-sm sm:text-base">Submit your project details and an AI operations expert will contact you to discuss a custom annotation workflow.</p>
                             </div>
                             <div id="hs-modal-img-video" className="min-h-[320px]">

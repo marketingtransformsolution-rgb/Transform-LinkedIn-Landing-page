@@ -42,7 +42,7 @@ const Workflow: React.FC = () => {
         <div className="lg:col-span-7 space-y-4 sm:space-y-6">
           <div className="reveal">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 leading-tight">
-              An Operational Partner, <br /> Not Just a Labeling Vendor
+              An operational partner, <br /> Not just a labeling vendor
             </h2>
             <p className="mt-4 sm:mt-6 text-slate-600 text-readable text-sm sm:text-base">
               TRANSFORM operates as a seamless extension of your machine learning team.

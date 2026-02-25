@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
 
           {/* Col 2 */}
           <div className="space-y-4">
-            <h4 className="text-slate-900 font-bold text-xs uppercase tracking-widest">US Presence</h4>
+            <h4 className="text-slate-900 font-bold text-xs uppercase tracking-widest">US presence</h4>
             <div className="text-sm space-y-2">
               <p>1005 Congress Avenue, Suite 925</p>
               <p>Austin, TX 78701</p>
@@ -34,7 +34,7 @@ const Footer: React.FC = () => {
 
           {/* Col 3 */}
           <div className="space-y-4">
-            <h4 className="text-slate-900 font-bold text-xs uppercase tracking-widest">Global Reach</h4>
+            <h4 className="text-slate-900 font-bold text-xs uppercase tracking-widest">Global reach</h4>
             <div className="text-sm space-y-2">
               <p>24/7 Operational Centers</p>
               <p>ISO/IEC 27001 Security</p>

@@ -40,7 +40,7 @@ const FAQ: React.FC = () => {
     <section className="section-spacing">
       <div className="max-w-[800px] mx-auto px-4 sm:px-6">
         <div className="text-center mb-12 sm:mb-16 reveal">
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900">Frequently Asked Questions</h2>
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900">Frequently asked questions</h2>
           <p className="text-slate-500 mt-2 text-sm sm:text-base">Everything you need to know about our operational model.</p>
         </div>
 

@@ -179,8 +179,8 @@ const TextNLPPage: React.FC = () => {
                             </div>
                             <div className="reveal" style={{ transitionDelay: '0.1s' }}>
                                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] xl:text-6xl font-extrabold tracking-tight leading-[1.07] text-slate-900 mb-6 sm:mb-8">
-                                    Text and NLP Annotation Operations Built for{' '}
-                                    <span className="text-blue-600">Scalable Language AI</span>
+                                    Text and NLP annotation operations built for{' '}
+                                    <span className="text-blue-600">scalable language AI</span>
                                 </h1>
                             </div>
                             <div className="reveal space-y-5" style={{ transitionDelay: '0.18s' }}>
@@ -227,7 +227,7 @@ const TextNLPPage: React.FC = () => {
                     <div className="text-center mb-12 sm:mb-16 reveal">
                         <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.4em] block mb-3">Strategic Risk</span>
                         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-4">
-                            When Text Annotation Becomes a Strategic Risk
+                            When text annotation becomes a strategic risk
                         </h2>
                         <p className="text-slate-500 max-w-xl mx-auto text-sm sm:text-base">
                             Annotation challenges in language AI are rarely obvious at first but have significant long-term impact on model performance.
@@ -257,7 +257,7 @@ const TextNLPPage: React.FC = () => {
                     <div className="text-center mb-12 sm:mb-16 reveal">
                         <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.4em] block mb-3">Our Approach</span>
                         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-4">
-                            How TRANSFORM Solves Enterprise NLP Annotation Challenges
+                            How TRANSFORM solves enterprise NLP annotation challenges
                         </h2>
                         <p className="text-slate-500 max-w-xl mx-auto text-sm sm:text-base">
                             TRANSFORM approaches language annotation as a managed operations discipline focused on semantic precision and AI safety.
@@ -297,7 +297,7 @@ const TextNLPPage: React.FC = () => {
                     <div className="text-center mb-12 sm:mb-16 reveal">
                         <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.4em] block mb-3">Capabilities</span>
                         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-4">
-                            Text and NLP Annotation Capabilities <br className="hidden sm:block" />Designed for Language AI
+                            Text and NLP annotation capabilities <br className="hidden sm:block" />designed for language AI
                         </h2>
                         <p className="text-slate-500 max-w-xl mx-auto text-sm sm:text-base">
                             Each workflow integrates structured QA governance to maintain semantic accuracy at scale.
@@ -323,7 +323,7 @@ const TextNLPPage: React.FC = () => {
                     <div className="text-center mb-12 sm:mb-16 reveal">
                         <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.4em] block mb-3">Real World Scenarios</span>
                         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-4">
-                            Real Deployment Scenarios in Language AI
+                            Real deployment scenarios in language AI
                         </h2>
                         <p className="text-slate-500 max-w-lg mx-auto text-sm sm:text-base">
                             These examples reflect common operational challenges faced by US-based language AI companies.
@@ -354,7 +354,7 @@ const TextNLPPage: React.FC = () => {
                         <div className="reveal">
                             <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.4em] block mb-3">Quality Governance</span>
                             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-5">
-                                Human-in-the-Loop Quality Governance for Language Data
+                                Human-in-the-loop quality governance for language data
                             </h2>
                             <p className="text-slate-500 text-sm sm:text-base leading-relaxed mb-8">
                                 Automation can accelerate annotation but cannot fully interpret context, nuance, or evolving language patterns. TRANSFORM integrates expert review layers that maintain semantic consistency and AI safety standards.
@@ -383,7 +383,7 @@ const TextNLPPage: React.FC = () => {
                             {[
                                 { stat: '99%+', label: 'Semantic Accuracy Rate' },
                                 { stat: '10+', label: 'Languages Supported' },
-                                { stat: '500M+', label: 'Text Samples Labeled' },
+                                { stat: '50M+', label: 'Annotations Delivered' },
                                 { stat: '24/7', label: 'Operational Support' },
                             ].map((s, i) => (
                                 <div key={i} className="bg-white border border-slate-200 rounded-2xl p-6 text-center hover:border-blue-200 hover:shadow-md transition-all">
@@ -402,7 +402,7 @@ const TextNLPPage: React.FC = () => {
                     <div className="text-center mb-12 reveal">
                         <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.4em] block mb-3">Why TRANSFORM</span>
                         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-4">
-                            Why Enterprise Language AI Teams Choose TRANSFORM
+                            Why enterprise language AI teams choose TRANSFORM
                         </h2>
                         <p className="text-slate-500 max-w-xl mx-auto text-sm sm:text-base">
                             Language AI leaders increasingly seek partners who understand the complexity of semantic data operations rather than traditional outsourcing vendors.
@@ -415,7 +415,7 @@ const TextNLPPage: React.FC = () => {
                             </div>
                             <div>
                                 <p className="text-[10px] font-black text-blue-600 uppercase tracking-widest mb-1">Operational Scenario</p>
-                                <h3 className="font-bold text-slate-900 text-lg">Structured NLP Annotation Governance</h3>
+                                <h3 className="font-bold text-slate-900 text-lg">Structured NLP annotation governance</h3>
                             </div>
                         </div>
                         <blockquote className="text-slate-600 text-base sm:text-lg leading-relaxed border-l-4 border-blue-100 pl-6 italic">
@@ -449,7 +449,7 @@ const TextNLPPage: React.FC = () => {
                         <div className="relative z-10">
                             <span className="text-[10px] font-black text-blue-200 uppercase tracking-[0.4em] block mb-4">Get Started</span>
                             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white mb-5">
-                                Strengthen the Foundation of Your Language AI Models
+                                Strengthen the foundation of your language AI models
                             </h2>
                             <p className="text-blue-100 max-w-xl mx-auto text-sm sm:text-base leading-relaxed mb-8">
                                 If text annotation workflows are creating inconsistencies or slowing LLM training cycles, an operations assessment can identify governance improvements that stabilize your data pipeline.
@@ -479,7 +479,7 @@ const TextNLPPage: React.FC = () => {
                 <div className="max-w-[800px] mx-auto px-4 sm:px-6">
                     <div className="text-center mb-12 sm:mb-16 reveal">
                         <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.4em] block mb-3">FAQ</span>
-                        <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900">Frequently Asked Questions</h2>
+                        <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900">Frequently asked questions</h2>
                         <p className="text-slate-500 mt-2 text-sm sm:text-base">Common questions on enterprise text and NLP annotation.</p>
                     </div>
                     <div className="space-y-4">
@@ -509,7 +509,7 @@ const TextNLPPage: React.FC = () => {
                         <div className="p-8 sm:p-12">
                             <div className="text-center mb-8">
                                 <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.4em] block mb-4">Get in Touch</span>
-                                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-3">Ready to Scale Your Training Data?</h2>
+                                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-3">Ready to scale your training data?</h2>
                                 <p className="text-slate-500 text-sm sm:text-base">Submit your project details and an AI operations expert will contact you to discuss a custom annotation workflow.</p>
                             </div>
                             <div id="hs-modal-nlp" className="min-h-[320px]">

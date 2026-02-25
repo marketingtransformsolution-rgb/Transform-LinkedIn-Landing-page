@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
                 <span className="text-[9px] sm:text-[10px] font-black text-blue-700 uppercase tracking-widest">Scale Your ML Pipelines</span>
               </div>
               <h1 className="text-2xl sm:text-3xl md:text-[2.25rem] lg:text-[2.6rem] xl:text-5xl font-extrabold tracking-tight leading-[1.1] text-slate-900">
-                Are Your AI Models Slowing Down Because Training Data Cannot Keep Up?
+                Are your AI models slowing down because training data cannot keep up?
               </h1>
             </div>
 
@@ -90,7 +90,7 @@ const Hero: React.FC = () => {
 
               {/* Bottom Stats Badge */}
               <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-white px-8 py-4 rounded-2xl shadow-xl border border-slate-100 z-30">
-                <p className="text-3xl font-black text-blue-600 text-center">500M+</p>
+                <p className="text-3xl font-black text-blue-600 text-center">50M+</p>
                 <p className="text-[10px] text-slate-400 font-bold uppercase tracking-widest text-center mt-1">Annotations Delivered</p>
               </div>
             </div>
