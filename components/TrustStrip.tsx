@@ -87,33 +87,33 @@ const TrustStrip: React.FC = () => {
           {/* Card 1 */}
           <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-slate-100 reveal flex flex-col items-center text-center transition-transform hover:-translate-y-1" style={{ transitionDelay: '0.1s' }}>
             <div className="text-3xl sm:text-4xl lg:text-5xl font-black text-red-600 mb-2">
-              <Counter end={100} suffix="k+" />
+              <Counter end={60} suffix="M+" />
             </div>
-            <div className="text-[10px] sm:text-xs font-black text-slate-400 uppercase tracking-widest">Data points</div>
+            <div className="text-[10px] sm:text-xs font-black text-slate-400 uppercase tracking-widest">Data points processed</div>
           </div>
 
           {/* Card 2 */}
           <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 reveal flex flex-col items-center text-center transition-transform hover:-translate-y-1" style={{ transitionDelay: '0.2s' }}>
             <div className="text-4xl lg:text-5xl font-black text-red-600 mb-2">
-              <Counter end={100} suffix="+" />
+              <Counter end={140} suffix="+" />
             </div>
-            <div className="text-xs font-black text-slate-400 uppercase tracking-widest">Data annotators</div>
+            <div className="text-xs font-black text-slate-400 uppercase tracking-widest">Annotators</div>
           </div>
 
           {/* Card 3 */}
           <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 reveal flex flex-col items-center text-center transition-transform hover:-translate-y-1" style={{ transitionDelay: '0.3s' }}>
             <div className="text-4xl lg:text-5xl font-black text-red-600 mb-2">
-              <Counter end={100} suffix="+" />
+              <Counter end={40} suffix="+" />
             </div>
-            <div className="text-xs font-black text-slate-400 uppercase tracking-widest">Data types annotated</div>
+            <div className="text-xs font-black text-slate-400 uppercase tracking-widest">Annotation workflows</div>
           </div>
 
           {/* Card 4 */}
           <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 reveal flex flex-col items-center text-center transition-transform hover:-translate-y-1" style={{ transitionDelay: '0.4s' }}>
             <div className="text-4xl lg:text-5xl font-black text-red-600 mb-2">
-              <Counter end={99.5} suffix="%" decimals={1} />
+              <Counter end={99.1} suffix="%" decimals={1} />
             </div>
-            <div className="text-xs font-black text-slate-400 uppercase tracking-widest">Accuracy</div>
+            <div className="text-xs font-black text-slate-400 uppercase tracking-widest">QA validated accuracy</div>
           </div>
 
         </div>

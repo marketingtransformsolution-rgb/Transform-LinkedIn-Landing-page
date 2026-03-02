@@ -418,10 +418,10 @@ const ImageVideoAnnotationPage: React.FC = () => {
 
                         <div className="reveal grid grid-cols-1 sm:grid-cols-2 gap-4" style={{ transitionDelay: '0.15s' }}>
                             {[
-                                { stat: '99%+', label: 'Annotation Accuracy' },
-                                { stat: '3x', label: 'Faster QA Cycles' },
-                                { stat: '50M+', label: 'Annotations Delivered' },
-                                { stat: '24/7', label: 'Operational Support' },
+                                { stat: '99.1%+', label: 'Annotation Accuracy' },
+                                { stat: '140+', label: 'Annotators' },
+                                { stat: '60M+', label: 'Data Points Processed' },
+                                { stat: '40+', label: 'Annotation Workflows' },
                             ].map((s, i) => (
                                 <div key={i} className="bg-white border border-slate-200 rounded-2xl p-6 text-center hover:border-red-200 hover:shadow-md transition-all">
                                     <p className="text-3xl font-black text-red-600 mb-1">{s.stat}</p>
