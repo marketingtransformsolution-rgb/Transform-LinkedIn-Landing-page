@@ -6,7 +6,7 @@ const SolutionOverview: React.FC = () => {
     <section id="solutions" className="section-spacing bg-white">
       {/* Top Center Content */}
       <div className="max-content text-center mb-12 sm:mb-16 lg:mb-24 reveal">
-        <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.3em] block mb-4">
+        <span className="text-[11px] font-black text-red-600 uppercase tracking-[0.3em] block mb-4">
           DATA ANNOTATION SERVICES
         </span>
         <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-extrabold text-slate-900 leading-tight mb-4 sm:mb-6">
@@ -76,15 +76,15 @@ const SolutionOverview: React.FC = () => {
               </div>
 
               {/* Right Column: Our Solution - With Tinted Background and Enhanced Hierarchy */}
-              <div className="bg-blue-50/40 p-6 sm:p-8 lg:p-12 space-y-8 sm:space-y-10 border-l border-slate-50">
+              <div className="bg-red-50/40 p-6 sm:p-8 lg:p-12 space-y-8 sm:space-y-10 border-l border-slate-50">
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
-                    <span className="w-2.5 h-2.5 rounded-full bg-blue-600"></span>
-                    <h4 className="text-blue-600 font-extrabold text-xl lg:text-2xl uppercase tracking-tight">
+                    <span className="w-2.5 h-2.5 rounded-full bg-red-600"></span>
+                    <h4 className="text-red-600 font-extrabold text-xl lg:text-2xl uppercase tracking-tight">
                       Our solution
                     </h4>
                   </div>
-                  <div className="h-1 w-16 bg-blue-200 rounded-full"></div>
+                  <div className="h-1 w-16 bg-red-200 rounded-full"></div>
                 </div>
 
                 <ul className="space-y-0">
@@ -93,9 +93,9 @@ const SolutionOverview: React.FC = () => {
                     "Domain experts validate annotations for accuracy",
                     "Scalable teams aligned with project complexity"
                   ].map((text, i) => (
-                    <li key={i} className={`flex gap-3 sm:gap-4 items-start min-h-[70px] sm:min-h-[80px] py-4 sm:py-5 ${i !== 2 ? 'border-b border-blue-100/50' : ''}`}>
-                      <div className="bg-blue-100 p-1.5 rounded-full shrink-0 mt-0.5">
-                        <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600" strokeWidth={2.5} />
+                    <li key={i} className={`flex gap-3 sm:gap-4 items-start min-h-[70px] sm:min-h-[80px] py-4 sm:py-5 ${i !== 2 ? 'border-b border-red-100/50' : ''}`}>
+                      <div className="bg-red-100 p-1.5 rounded-full shrink-0 mt-0.5">
+                        <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-red-600" strokeWidth={2.5} />
                       </div>
                       <span className="text-sm sm:text-[15px] font-bold text-slate-900 leading-snug">{text}</span>
                     </li>

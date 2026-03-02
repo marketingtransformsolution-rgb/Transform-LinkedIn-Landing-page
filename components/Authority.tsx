@@ -23,9 +23,9 @@ const Authority: React.FC = () => {
       <div className="max-content grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 lg:gap-16 xl:gap-24 relative z-10">
         {/* Left Column: Narrative */}
         <div className="lg:col-span-7 reveal">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100/50 border border-blue-200 mb-6">
-            <Globe className="w-3 h-3 text-blue-600" />
-            <span className="text-[10px] font-bold text-blue-700 uppercase tracking-widest">Global Operations</span>
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-100/50 border border-red-200 mb-6">
+            <Globe className="w-3 h-3 text-red-600" />
+            <span className="text-[10px] font-bold text-red-700 uppercase tracking-widest">Global Operations</span>
           </div>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-6 sm:mb-8">Built for global scale</h2>
           <div className="space-y-4 sm:space-y-6 text-slate-600 leading-relaxed text-readable text-base sm:text-lg">
@@ -69,7 +69,7 @@ const Authority: React.FC = () => {
               </div>
             </div>
             <div className="flex items-center gap-4 p-4 bg-white rounded-xl border border-slate-200 shadow-sm">
-              <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center text-blue-600">
+              <div className="w-10 h-10 rounded-lg bg-red-50 flex items-center justify-center text-red-600">
                 <Award className="w-6 h-6" />
               </div>
               <div>

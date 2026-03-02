@@ -42,7 +42,7 @@ const Conversion: React.FC = () => {
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center reveal" style={{ transitionDelay: '0.2s' }}>
           <button
             onClick={() => handleScrollToContact('Book Strategy Call')}
-            className="w-full sm:w-auto h-12 sm:h-14 px-8 sm:px-10 bg-blue-600 hover:bg-blue-700 text-white text-sm sm:text-base font-bold rounded-lg shadow-lg shadow-blue-100 transition-all animate-pulse-cta"
+            className="w-full sm:w-auto h-12 sm:h-14 px-8 sm:px-10 bg-red-600 hover:bg-red-700 text-white text-sm sm:text-base font-bold rounded-lg shadow-lg shadow-red-100 transition-all animate-pulse-cta"
           >
             Book Strategy Call
           </button>

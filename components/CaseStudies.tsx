@@ -42,7 +42,7 @@ const CaseStudies: React.FC = () => {
             >
               {/* Left: Metric */}
               <div className="lg:col-span-4 text-center">
-                <span className="block text-6xl sm:text-7xl lg:text-8xl xl:text-9xl font-black text-slate-900 tracking-tighter group-hover:text-blue-600 transition-colors duration-500">
+                <span className="block text-6xl sm:text-7xl lg:text-8xl xl:text-9xl font-black text-slate-900 tracking-tighter group-hover:text-red-600 transition-colors duration-500">
                   {item.metric}
                 </span>
                 <span className="text-base sm:text-lg lg:text-xl font-bold text-slate-500 uppercase tracking-widest">{item.label}</span>
@@ -51,17 +51,17 @@ const CaseStudies: React.FC = () => {
               {/* Right: Explanation */}
               <div className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-10 lg:gap-12">
                 <div>
-                  <h4 className="text-xs font-bold text-blue-600 uppercase mb-3 tracking-wider">The challenge</h4>
+                  <h4 className="text-xs font-bold text-red-600 uppercase mb-3 tracking-wider">The challenge</h4>
                   <p className="text-slate-600 text-sm leading-relaxed">{item.challenge}</p>
                 </div>
                 <div>
-                  <h4 className="text-xs font-bold text-blue-600 uppercase mb-3 tracking-wider">The solution</h4>
+                  <h4 className="text-xs font-bold text-red-600 uppercase mb-3 tracking-wider">The solution</h4>
                   <p className="text-slate-600 text-sm leading-relaxed">{item.solution}</p>
                 </div>
                 <div className="md:col-span-2 pt-6 border-t border-slate-100 flex flex-wrap gap-8">
                   {item.results.map((res, i) => (
                     <div key={i} className="flex items-center gap-2">
-                      <div className="w-2 h-2 rounded-full bg-blue-600"></div>
+                      <div className="w-2 h-2 rounded-full bg-red-600"></div>
                       <span className="font-bold text-slate-900">{res}</span>
                     </div>
                   ))}

@@ -21,7 +21,7 @@ const Workflow: React.FC = () => {
           <div className="space-y-8 sm:space-y-10 lg:space-y-12">
             {steps.map((step, index) => (
               <div key={index} className="flex items-start sm:items-center gap-4 sm:gap-6 relative group">
-                <div className="w-12 h-12 sm:w-14 sm:h-14 shrink-0 rounded-full bg-white border-2 border-slate-100 flex items-center justify-center text-slate-400 group-hover:border-blue-500 group-hover:text-blue-500 transition-colors z-10 shadow-sm">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 shrink-0 rounded-full bg-white border-2 border-slate-100 flex items-center justify-center text-slate-400 group-hover:border-red-500 group-hover:text-red-500 transition-colors z-10 shadow-sm">
                   {/* Fixed: Use React.ReactElement<any> to avoid type mismatch with className prop */}
                   {React.cloneElement(step.icon as React.ReactElement<any>, { className: 'w-5 h-5 sm:w-6 sm:h-6' })}
                 </div>
@@ -31,7 +31,7 @@ const Workflow: React.FC = () => {
                 </div>
                 {/* Connecting Line Progress (Visual only) */}
                 {index < steps.length - 1 && (
-                  <div className="absolute left-[27px] top-14 h-12 w-[2px] bg-blue-500 scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-500"></div>
+                  <div className="absolute left-[27px] top-14 h-12 w-[2px] bg-red-500 scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-500"></div>
                 )}
               </div>
             ))}
@@ -59,9 +59,9 @@ const Workflow: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 reveal" style={{ transitionDelay: '0.2s' }}>
-            <div className="p-4 rounded-lg bg-blue-50 border border-blue-100">
-              <p className="text-blue-600 font-bold text-lg">99%+ Accuracy</p>
-              <p className="text-xs text-blue-500">Multi-tier validation cycles</p>
+            <div className="p-4 rounded-lg bg-red-50 border border-red-100">
+              <p className="text-red-600 font-bold text-lg">99%+ Accuracy</p>
+              <p className="text-xs text-red-500">Multi-tier validation cycles</p>
             </div>
             <div className="p-4 rounded-lg bg-emerald-50 border border-emerald-100">
               <p className="text-emerald-600 font-bold text-lg">SOC2 Compliant</p>

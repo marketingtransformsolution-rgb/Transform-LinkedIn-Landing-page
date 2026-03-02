@@ -48,7 +48,7 @@ const FAQ: React.FC = () => {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="reveal border border-slate-200 rounded-xl overflow-hidden bg-white hover:border-blue-200 transition-colors"
+              className="reveal border border-slate-200 rounded-xl overflow-hidden bg-white hover:border-red-200 transition-colors"
               style={{ transitionDelay: `${index * 0.1}s` }}
             >
               <button

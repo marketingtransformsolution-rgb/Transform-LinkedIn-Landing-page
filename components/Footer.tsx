@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
             <div className="text-sm space-y-2">
               <p>1005 Congress Avenue, Suite 925</p>
               <p>Austin, TX 78701</p>
-              <p className="text-blue-600 font-bold mt-4">+1 (512) 955 8808</p>
+              <p className="text-red-600 font-bold mt-4">+1 (512) 955 8808</p>
             </div>
           </div>
 
@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
             <div className="text-sm space-y-2">
               <p>24/7 Operational Centers</p>
               <p>ISO/IEC 27001 Security</p>
-              <p className="text-blue-600 font-bold mt-4">sales@transformsolution.com</p>
+              <p className="text-red-600 font-bold mt-4">sales@transformsolution.com</p>
             </div>
           </div>
         </div>
@@ -81,9 +81,9 @@ const Footer: React.FC = () => {
           </div>
 
           <div className="flex gap-6 sm:gap-8">
-            <a href="#" className="hover:text-blue-600 transition-colors">Privacy</a>
-            <a href="#" className="hover:text-blue-600 transition-colors">Security</a>
-            <a href="#" className="hover:text-blue-600 transition-colors">Ethics</a>
+            <a href="#" className="hover:text-red-600 transition-colors">Privacy</a>
+            <a href="#" className="hover:text-red-600 transition-colors">Security</a>
+            <a href="#" className="hover:text-red-600 transition-colors">Ethics</a>
           </div>
         </div>
       </div>

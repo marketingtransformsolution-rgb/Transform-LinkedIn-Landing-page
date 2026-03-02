@@ -14,11 +14,11 @@ const ToolsGrid: React.FC = () => {
         <div className="bg-slate-50 rounded-[2rem] sm:rounded-[3rem] p-8 sm:p-12 lg:p-20 relative">
 
           {/* Subtle decorative circles */}
-          <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 w-64 h-64 bg-blue-100/30 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 w-64 h-64 bg-red-100/30 rounded-full blur-3xl pointer-events-none" />
           <div className="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/4 w-64 h-64 bg-indigo-100/30 rounded-full blur-3xl pointer-events-none" />
 
           <div className="max-w-[800px] mb-12 sm:mb-16 reveal relative z-10">
-            <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.3em] block mb-4 uppercase">
+            <span className="text-[11px] font-black text-red-600 uppercase tracking-[0.3em] block mb-4 uppercase">
               Platforms and Tools
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-6 tracking-tight">
@@ -39,13 +39,13 @@ const ToolsGrid: React.FC = () => {
               >
                 <div className={`
                   px-6 sm:px-8 py-3 sm:py-4 rounded-2xl bg-white border border-slate-200 
-                  shadow-sm group-hover:shadow-md group-hover:border-blue-300 
+                  shadow-sm group-hover:shadow-md group-hover:border-red-300 
                   transition-all duration-300 transform group-hover:-translate-y-1
                   animate-float
                 `}
                   style={{ animationDelay: `${index * 0.2}s` }}
                 >
-                  <span className="text-sm sm:text-base font-bold text-slate-700 group-hover:text-blue-600 transition-colors">
+                  <span className="text-sm sm:text-base font-bold text-slate-700 group-hover:text-red-600 transition-colors">
                     {tool}
                   </span>
                 </div>

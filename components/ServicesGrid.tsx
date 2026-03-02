@@ -52,7 +52,7 @@ const ServicesGrid: React.FC = () => {
             <Link
               to={service.link}
               key={index}
-              className="reveal relative bg-white rounded-2xl overflow-hidden border border-slate-100 h-auto sm:h-[280px] flex flex-col justify-end p-6 sm:p-8 shadow-sm hover:shadow-md hover:border-blue-200 transition-all duration-200 no-underline"
+              className="reveal relative bg-white rounded-2xl overflow-hidden border border-slate-100 h-auto sm:h-[280px] flex flex-col justify-end p-6 sm:p-8 shadow-sm hover:shadow-md hover:border-red-200 transition-all duration-200 no-underline"
               style={{ transitionDelay: `${index * 0.1}s` }}
             >
               {/* Background with subtle watermark-style blur - Static, no hover change */}
@@ -62,7 +62,7 @@ const ServicesGrid: React.FC = () => {
               ></div>
 
               <div className="relative z-10 space-y-4">
-                <div className="w-12 h-12 rounded-lg bg-blue-600 text-white flex items-center justify-center shadow-md mb-4">
+                <div className="w-12 h-12 rounded-lg bg-red-600 text-white flex items-center justify-center shadow-md mb-4">
                   {/* Fixed: Use React.ReactElement<any> to avoid type mismatch with className prop */}
                   {React.cloneElement(service.icon as React.ReactElement<any>, { className: 'w-6 h-6' })}
                 </div>
@@ -72,8 +72,8 @@ const ServicesGrid: React.FC = () => {
                 </p>
                 <div className="pt-2 flex items-center gap-3">
                   {/* Distinct thin line accent */}
-                  <span className="h-px w-6 bg-blue-600 flex-shrink-0"></span>
-                  <p className="text-blue-600 font-black text-[11px] uppercase tracking-tighter">
+                  <span className="h-px w-6 bg-red-600 flex-shrink-0"></span>
+                  <p className="text-red-600 font-black text-[11px] uppercase tracking-tighter">
                     {service.outcome}
                   </p>
                 </div>

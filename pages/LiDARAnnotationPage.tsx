@@ -116,7 +116,7 @@ const FAQItem: React.FC<{ faq: { q: string; a: string }; index: number }> = ({ f
     const [open, setOpen] = useState(index === 0);
     return (
         <div
-            className="reveal border border-slate-200 rounded-xl overflow-hidden bg-white hover:border-blue-200 transition-colors"
+            className="reveal border border-slate-200 rounded-xl overflow-hidden bg-white hover:border-red-200 transition-colors"
             style={{ transitionDelay: `${index * 0.08}s` }}
         >
             <button
@@ -190,16 +190,16 @@ const LiDARAnnotationPage: React.FC = () => {
                         {/* LEFT — badge + H1 + body + CTAs */}
                         <div>
                             <div className="reveal" style={{ transitionDelay: '0.05s' }}>
-                                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 mb-6">
-                                    <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse" />
-                                    <span className="text-[10px] font-black text-blue-700 uppercase tracking-widest">LiDAR &amp; Sensor Annotation</span>
+                                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-50 border border-red-100 mb-6">
+                                    <span className="w-2 h-2 rounded-full bg-red-600 animate-pulse" />
+                                    <span className="text-[10px] font-black text-red-700 uppercase tracking-widest">LiDAR &amp; Sensor Annotation</span>
                                 </div>
                             </div>
 
                             <div className="reveal" style={{ transitionDelay: '0.1s' }}>
                                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] xl:text-6xl font-extrabold tracking-tight leading-[1.07] text-slate-900 mb-6 sm:mb-8">
                                     LiDAR and sensor annotation operations built for{' '}
-                                    <span className="text-blue-600">high-fidelity spatial AI</span>
+                                    <span className="text-red-600">high-fidelity spatial AI</span>
                                 </h1>
                             </div>
 
@@ -209,12 +209,12 @@ const LiDARAnnotationPage: React.FC = () => {
                                 </p>
                                 <p className="text-base sm:text-lg text-slate-500 leading-relaxed">
                                     As LiDAR and multi-sensor datasets grow, annotation complexity increases rapidly. Small inaccuracies in point cloud labeling can affect perception models and slow deployment timelines.{' '}
-                                    <span className="text-blue-600 font-bold">TRANSFORM</span> provides managed LiDAR and sensor annotation operations designed to deliver precise spatial data labeling, structured QA workflows, and scalable governance frameworks.
+                                    <span className="text-red-600 font-bold">TRANSFORM</span> provides managed LiDAR and sensor annotation operations designed to deliver precise spatial data labeling, structured QA workflows, and scalable governance frameworks.
                                 </p>
                                 <div className="flex flex-col sm:flex-row gap-4 pt-2">
                                     <button
                                         onClick={() => setDialogOpen(true)}
-                                        className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl shadow-xl shadow-blue-100 transition-all transform hover:scale-105 active:scale-95 text-sm sm:text-base"
+                                        className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-red-600 hover:bg-red-700 text-white font-bold rounded-xl shadow-xl shadow-red-100 transition-all transform hover:scale-105 active:scale-95 text-sm sm:text-base"
                                     >
                                         Start Your Sensor Annotation Assessment
                                         <ArrowRight className="w-4 h-4" />
@@ -245,7 +245,7 @@ const LiDARAnnotationPage: React.FC = () => {
             <section className="section-spacing bg-slate-50 border-y border-slate-100 py-16 sm:py-20 lg:py-24">
                 <div className="max-content">
                     <div className="text-center mb-12 sm:mb-16 reveal">
-                        <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.4em] block mb-3">Deployment Risk</span>
+                        <span className="text-[11px] font-black text-red-600 uppercase tracking-[0.4em] block mb-3">Deployment Risk</span>
                         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-4">
                             When sensor annotation becomes a deployment risk
                         </h2>
@@ -258,12 +258,12 @@ const LiDARAnnotationPage: React.FC = () => {
                         {painPoints.map((pt, i) => (
                             <div
                                 key={i}
-                                className="reveal bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 hover:border-blue-200 hover:shadow-lg transition-all duration-300 group"
+                                className="reveal bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 hover:border-red-200 hover:shadow-lg transition-all duration-300 group"
                                 style={{ transitionDelay: `${i * 0.1}s` }}
                             >
                                 <div className="flex items-start gap-4">
-                                    <div className="w-10 h-10 rounded-xl bg-blue-100 flex items-center justify-center flex-shrink-0 group-hover:bg-blue-600 transition-colors duration-300">
-                                        <div className="w-3 h-3 rounded-full bg-blue-600 group-hover:bg-white transition-colors duration-300" />
+                                    <div className="w-10 h-10 rounded-xl bg-red-100 flex items-center justify-center flex-shrink-0 group-hover:bg-red-600 transition-colors duration-300">
+                                        <div className="w-3 h-3 rounded-full bg-red-600 group-hover:bg-white transition-colors duration-300" />
                                     </div>
                                     <div>
                                         <h3 className="font-bold text-slate-900 mb-2 text-base sm:text-lg">{pt.title}</h3>
@@ -280,7 +280,7 @@ const LiDARAnnotationPage: React.FC = () => {
             <section className="section-spacing">
                 <div className="max-content">
                     <div className="text-center mb-12 sm:mb-16 reveal">
-                        <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.4em] block mb-3">Our Approach</span>
+                        <span className="text-[11px] font-black text-red-600 uppercase tracking-[0.4em] block mb-3">Our Approach</span>
                         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-4">
                             How TRANSFORM solves high-precision annotation challenges
                         </h2>
@@ -295,11 +295,11 @@ const LiDARAnnotationPage: React.FC = () => {
                             return (
                                 <div
                                     key={i}
-                                    className="reveal bg-white border border-slate-200 rounded-2xl p-7 sm:p-8 hover:shadow-xl hover:border-blue-200 transition-all duration-300 group text-center"
+                                    className="reveal bg-white border border-slate-200 rounded-2xl p-7 sm:p-8 hover:shadow-xl hover:border-red-200 transition-all duration-300 group text-center"
                                     style={{ transitionDelay: `${i * 0.12}s` }}
                                 >
-                                    <div className="w-14 h-14 rounded-2xl bg-blue-50 group-hover:bg-blue-600 flex items-center justify-center mx-auto mb-5 transition-colors duration-300">
-                                        <Icon className="w-7 h-7 text-blue-600 group-hover:text-white transition-colors duration-300" />
+                                    <div className="w-14 h-14 rounded-2xl bg-red-50 group-hover:bg-red-600 flex items-center justify-center mx-auto mb-5 transition-colors duration-300">
+                                        <Icon className="w-7 h-7 text-red-600 group-hover:text-white transition-colors duration-300" />
                                     </div>
                                     <h3 className="font-bold text-slate-900 text-lg mb-3">{sol.title}</h3>
                                     <p className="text-slate-500 text-sm sm:text-[15px] leading-relaxed">{sol.body}</p>
@@ -309,12 +309,12 @@ const LiDARAnnotationPage: React.FC = () => {
                     </div>
 
                     {/* outcome strip */}
-                    <div className="reveal bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-6 sm:p-8 text-white">
-                        <p className="text-xs font-black uppercase tracking-widest text-blue-200 mb-4">Outcome Focused Execution</p>
+                    <div className="reveal bg-gradient-to-r from-red-600 to-red-700 rounded-2xl p-6 sm:p-8 text-white">
+                        <p className="text-xs font-black uppercase tracking-widest text-red-200 mb-4">Outcome Focused Execution</p>
                         <div className="flex flex-col sm:flex-row gap-4 sm:gap-8">
                             {['Higher fidelity perception data', 'Reduced rework cycles', 'Improved model training stability'].map((o, i) => (
                                 <div key={i} className="flex items-center gap-3">
-                                    <CheckCircle className="w-5 h-5 text-blue-200 flex-shrink-0" />
+                                    <CheckCircle className="w-5 h-5 text-red-200 flex-shrink-0" />
                                     <span className="font-semibold text-sm sm:text-base">{o}</span>
                                 </div>
                             ))}
@@ -327,7 +327,7 @@ const LiDARAnnotationPage: React.FC = () => {
             <section className="section-spacing bg-slate-50 border-y border-slate-100">
                 <div className="max-content">
                     <div className="text-center mb-12 sm:mb-16 reveal">
-                        <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.4em] block mb-3">Capabilities</span>
+                        <span className="text-[11px] font-black text-red-600 uppercase tracking-[0.4em] block mb-3">Capabilities</span>
                         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-4">
                             LiDAR and sensor annotation capabilities <br className="hidden sm:block" />designed for autonomous AI
                         </h2>
@@ -340,11 +340,11 @@ const LiDARAnnotationPage: React.FC = () => {
                         {capabilities.map((cap, i) => (
                             <div
                                 key={i}
-                                className="reveal bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 hover:border-blue-300 hover:shadow-lg transition-all duration-300 group"
+                                className="reveal bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 hover:border-red-300 hover:shadow-lg transition-all duration-300 group"
                                 style={{ transitionDelay: `${i * 0.1}s` }}
                             >
                                 <div className="flex items-center gap-3 mb-3">
-                                    <div className="w-2 h-8 rounded-full bg-blue-600 group-hover:h-10 transition-all duration-300" />
+                                    <div className="w-2 h-8 rounded-full bg-red-600 group-hover:h-10 transition-all duration-300" />
                                     <h3 className="font-bold text-slate-900 text-base sm:text-lg">{cap.title}</h3>
                                 </div>
                                 <p className="text-slate-500 text-sm sm:text-[15px] leading-relaxed pl-5">{cap.body}</p>
@@ -358,7 +358,7 @@ const LiDARAnnotationPage: React.FC = () => {
             <section className="section-spacing">
                 <div className="max-content">
                     <div className="text-center mb-12 sm:mb-16 reveal">
-                        <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.4em] block mb-3">Real World Scenarios</span>
+                        <span className="text-[11px] font-black text-red-600 uppercase tracking-[0.4em] block mb-3">Real World Scenarios</span>
                         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-4">
                             Real deployment scenarios in autonomy and robotics
                         </h2>
@@ -373,14 +373,14 @@ const LiDARAnnotationPage: React.FC = () => {
                             return (
                                 <div
                                     key={i}
-                                    className="reveal relative bg-white border border-slate-200 rounded-2xl p-7 hover:shadow-xl hover:border-blue-200 transition-all duration-300 group overflow-hidden"
+                                    className="reveal relative bg-white border border-slate-200 rounded-2xl p-7 hover:shadow-xl hover:border-red-200 transition-all duration-300 group overflow-hidden"
                                     style={{ transitionDelay: `${i * 0.12}s` }}
                                 >
-                                    <div className="absolute top-0 right-0 w-24 h-24 bg-blue-50 rounded-full translate-x-8 -translate-y-8 group-hover:bg-blue-100 transition-colors duration-300" />
-                                    <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center mb-4 group-hover:bg-blue-600 transition-colors duration-300 relative">
-                                        <Icon className="w-6 h-6 text-blue-600 group-hover:text-white transition-colors duration-300" />
+                                    <div className="absolute top-0 right-0 w-24 h-24 bg-red-50 rounded-full translate-x-8 -translate-y-8 group-hover:bg-red-100 transition-colors duration-300" />
+                                    <div className="w-12 h-12 rounded-xl bg-red-50 flex items-center justify-center mb-4 group-hover:bg-red-600 transition-colors duration-300 relative">
+                                        <Icon className="w-6 h-6 text-red-600 group-hover:text-white transition-colors duration-300" />
                                     </div>
-                                    <span className="text-[10px] font-black text-blue-600 uppercase tracking-widest block mb-2">{sc.industry}</span>
+                                    <span className="text-[10px] font-black text-red-600 uppercase tracking-widest block mb-2">{sc.industry}</span>
                                     <p className="text-slate-600 text-sm sm:text-[15px] leading-relaxed">{sc.body}</p>
                                 </div>
                             );
@@ -395,7 +395,7 @@ const LiDARAnnotationPage: React.FC = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
                         <div className="reveal">
-                            <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.4em] block mb-3">Quality Governance</span>
+                            <span className="text-[11px] font-black text-red-600 uppercase tracking-[0.4em] block mb-3">Quality Governance</span>
                             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-5">
                                 Human-in-the-loop quality governance for spatial data
                             </h2>
@@ -405,17 +405,17 @@ const LiDARAnnotationPage: React.FC = () => {
                             <div className="space-y-4 mb-8">
                                 {['Precision-focused QA reviews', 'Standardized spatial labeling frameworks', 'Continuous validation of point cloud datasets'].map((item, i) => (
                                     <div key={i} className="flex items-start gap-3">
-                                        <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                                        <CheckCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
                                         <span className="text-slate-700 font-medium text-sm sm:text-base">{item}</span>
                                     </div>
                                 ))}
                             </div>
-                            <div className="bg-blue-50 border border-blue-100 rounded-xl p-5">
-                                <p className="text-xs font-black text-blue-600 uppercase tracking-widest mb-3">Executive Impact</p>
+                            <div className="bg-red-50 border border-red-100 rounded-xl p-5">
+                                <p className="text-xs font-black text-red-600 uppercase tracking-widest mb-3">Executive Impact</p>
                                 <div className="space-y-2">
                                     {['Reduced perception model risk', 'More reliable autonomy performance', 'Predictable dataset delivery timelines'].map((item, i) => (
                                         <div key={i} className="flex items-center gap-2">
-                                            <div className="w-1.5 h-1.5 rounded-full bg-blue-600 flex-shrink-0" />
+                                            <div className="w-1.5 h-1.5 rounded-full bg-red-600 flex-shrink-0" />
                                             <span className="text-slate-700 text-sm font-medium">{item}</span>
                                         </div>
                                     ))}
@@ -430,8 +430,8 @@ const LiDARAnnotationPage: React.FC = () => {
                                 { stat: '50M+', label: 'Annotations Delivered' },
                                 { stat: '24/7', label: 'Operational Support' },
                             ].map((s, i) => (
-                                <div key={i} className="bg-white border border-slate-200 rounded-2xl p-6 text-center hover:border-blue-200 hover:shadow-md transition-all">
-                                    <p className="text-3xl font-black text-blue-600 mb-1">{s.stat}</p>
+                                <div key={i} className="bg-white border border-slate-200 rounded-2xl p-6 text-center hover:border-red-200 hover:shadow-md transition-all">
+                                    <p className="text-3xl font-black text-red-600 mb-1">{s.stat}</p>
                                     <p className="text-xs font-bold text-slate-500 uppercase tracking-widest">{s.label}</p>
                                 </div>
                             ))}
@@ -444,7 +444,7 @@ const LiDARAnnotationPage: React.FC = () => {
             <section className="section-spacing">
                 <div className="max-content">
                     <div className="text-center mb-12 reveal">
-                        <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.4em] block mb-3">Why TRANSFORM</span>
+                        <span className="text-[11px] font-black text-red-600 uppercase tracking-[0.4em] block mb-3">Why TRANSFORM</span>
                         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-4">
                             Why autonomous AI teams choose TRANSFORM
                         </h2>
@@ -455,15 +455,15 @@ const LiDARAnnotationPage: React.FC = () => {
 
                     <div className="reveal bg-white border border-slate-200 rounded-3xl p-8 sm:p-12 hover:shadow-xl transition-shadow duration-300 max-w-3xl mx-auto">
                         <div className="flex items-start gap-4 mb-6">
-                            <div className="w-12 h-12 rounded-2xl bg-blue-600 flex items-center justify-center flex-shrink-0">
+                            <div className="w-12 h-12 rounded-2xl bg-red-600 flex items-center justify-center flex-shrink-0">
                                 <Box className="w-6 h-6 text-white" />
                             </div>
                             <div>
-                                <p className="text-[10px] font-black text-blue-600 uppercase tracking-widest mb-1">Operational Scenario</p>
+                                <p className="text-[10px] font-black text-red-600 uppercase tracking-widest mb-1">Operational Scenario</p>
                                 <h3 className="font-bold text-slate-900 text-lg">Structured LiDAR annotation governance</h3>
                             </div>
                         </div>
-                        <blockquote className="text-slate-600 text-base sm:text-lg leading-relaxed border-l-4 border-blue-100 pl-6 italic">
+                        <blockquote className="text-slate-600 text-base sm:text-lg leading-relaxed border-l-4 border-red-100 pl-6 italic">
                             "A robotics company faced inconsistent object classification across LiDAR datasets. After implementing structured annotation governance, training data reliability improved and model validation cycles accelerated."
                         </blockquote>
                         <div className="mt-8 pt-6 border-t border-slate-100 grid grid-cols-3 gap-4 text-center">
@@ -480,7 +480,7 @@ const LiDARAnnotationPage: React.FC = () => {
             {/* ── SECTION 8 · CONVERSION CTA ───────────────────────────────── */}
             <section className="section-spacing bg-slate-50 border-y border-slate-100">
                 <div className="max-content">
-                    <div className="reveal bg-gradient-to-br from-blue-600 to-blue-800 rounded-3xl p-10 sm:p-16 text-center relative overflow-hidden">
+                    <div className="reveal bg-gradient-to-br from-red-600 to-red-800 rounded-3xl p-10 sm:p-16 text-center relative overflow-hidden">
                         <div className="absolute inset-0 opacity-10">
                             <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
                                 <defs>
@@ -493,17 +493,17 @@ const LiDARAnnotationPage: React.FC = () => {
                         </div>
 
                         <div className="relative z-10">
-                            <span className="text-[10px] font-black text-blue-200 uppercase tracking-[0.4em] block mb-4">Get Started</span>
+                            <span className="text-[10px] font-black text-red-200 uppercase tracking-[0.4em] block mb-4">Get Started</span>
                             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white mb-5">
                                 Stabilize your spatial data pipeline before it slows deployment
                             </h2>
-                            <p className="text-blue-100 max-w-xl mx-auto text-sm sm:text-base leading-relaxed mb-8">
+                            <p className="text-red-100 max-w-xl mx-auto text-sm sm:text-base leading-relaxed mb-8">
                                 If LiDAR annotation complexity is increasing faster than internal teams can manage, a structured operations assessment can identify where governance and workflow improvements will reduce risk and improve dataset accuracy.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                 <button
                                     onClick={scrollToContact}
-                                    className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-blue-600 font-bold rounded-xl hover:shadow-2xl hover:scale-105 transition-all active:scale-95"
+                                    className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-red-600 font-bold rounded-xl hover:shadow-2xl hover:scale-105 transition-all active:scale-95"
                                 >
                                     Request a LiDAR Annotation Review
                                     <ArrowRight className="w-4 h-4" />
@@ -524,7 +524,7 @@ const LiDARAnnotationPage: React.FC = () => {
             <section className="section-spacing">
                 <div className="max-w-[800px] mx-auto px-4 sm:px-6">
                     <div className="text-center mb-12 sm:mb-16 reveal">
-                        <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.4em] block mb-3">FAQ</span>
+                        <span className="text-[11px] font-black text-red-600 uppercase tracking-[0.4em] block mb-3">FAQ</span>
                         <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900">Frequently asked questions</h2>
                         <p className="text-slate-500 mt-2 text-sm sm:text-base">Common questions on LiDAR and sensor annotation operations.</p>
                     </div>
@@ -559,7 +559,7 @@ const LiDARAnnotationPage: React.FC = () => {
                         </button>
                         <div className="p-8 sm:p-12">
                             <div className="text-center mb-8">
-                                <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.4em] block mb-4">Get in Touch</span>
+                                <span className="text-[11px] font-black text-red-600 uppercase tracking-[0.4em] block mb-4">Get in Touch</span>
                                 <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-3">Ready to scale your training data?</h2>
                                 <p className="text-slate-500 text-sm sm:text-base">Submit your project details and an AI operations expert will contact you to discuss a custom annotation workflow.</p>
                             </div>

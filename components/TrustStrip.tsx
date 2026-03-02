@@ -86,7 +86,7 @@ const TrustStrip: React.FC = () => {
 
           {/* Card 1 */}
           <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-slate-100 reveal flex flex-col items-center text-center transition-transform hover:-translate-y-1" style={{ transitionDelay: '0.1s' }}>
-            <div className="text-3xl sm:text-4xl lg:text-5xl font-black text-blue-600 mb-2">
+            <div className="text-3xl sm:text-4xl lg:text-5xl font-black text-red-600 mb-2">
               <Counter end={100} suffix="mn+" />
             </div>
             <div className="text-[10px] sm:text-xs font-black text-slate-400 uppercase tracking-widest">Data points</div>
@@ -94,7 +94,7 @@ const TrustStrip: React.FC = () => {
 
           {/* Card 2 */}
           <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 reveal flex flex-col items-center text-center transition-transform hover:-translate-y-1" style={{ transitionDelay: '0.2s' }}>
-            <div className="text-4xl lg:text-5xl font-black text-blue-600 mb-2">
+            <div className="text-4xl lg:text-5xl font-black text-red-600 mb-2">
               <Counter end={100} suffix="+" />
             </div>
             <div className="text-xs font-black text-slate-400 uppercase tracking-widest">Data annotators</div>
@@ -102,7 +102,7 @@ const TrustStrip: React.FC = () => {
 
           {/* Card 3 */}
           <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 reveal flex flex-col items-center text-center transition-transform hover:-translate-y-1" style={{ transitionDelay: '0.3s' }}>
-            <div className="text-4xl lg:text-5xl font-black text-blue-600 mb-2">
+            <div className="text-4xl lg:text-5xl font-black text-red-600 mb-2">
               <Counter end={100} suffix="+" />
             </div>
             <div className="text-xs font-black text-slate-400 uppercase tracking-widest">Data types annotated</div>
@@ -110,7 +110,7 @@ const TrustStrip: React.FC = () => {
 
           {/* Card 4 */}
           <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 reveal flex flex-col items-center text-center transition-transform hover:-translate-y-1" style={{ transitionDelay: '0.4s' }}>
-            <div className="text-4xl lg:text-5xl font-black text-blue-600 mb-2">
+            <div className="text-4xl lg:text-5xl font-black text-red-600 mb-2">
               <Counter end={99.5} suffix="%" decimals={1} />
             </div>
             <div className="text-xs font-black text-slate-400 uppercase tracking-widest">Accuracy</div>
@@ -127,7 +127,7 @@ const TrustStrip: React.FC = () => {
           <div>
             <button
               onClick={handleScrollToContact}
-              className="w-full sm:w-auto h-14 sm:h-16 px-8 sm:px-12 bg-blue-600 hover:bg-blue-700 text-white font-black text-base sm:text-lg rounded-xl shadow-xl shadow-blue-100 transition-all transform hover:scale-105 active:scale-95 animate-pulse-cta"
+              className="w-full sm:w-auto h-14 sm:h-16 px-8 sm:px-12 bg-red-600 hover:bg-red-700 text-white font-black text-base sm:text-lg rounded-xl shadow-xl shadow-red-100 transition-all transform hover:scale-105 active:scale-95 animate-pulse-cta"
             >
               ANNOTATE DATA WITH US NOW
             </button>

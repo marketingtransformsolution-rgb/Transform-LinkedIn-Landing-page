@@ -38,7 +38,7 @@ const ContactForm: React.FC = () => {
       <div className="max-content">
         <div className="max-w-[800px] mx-auto bg-white rounded-2xl sm:rounded-3xl lg:rounded-[2.5rem] p-6 sm:p-8 lg:p-16 shadow-xl shadow-slate-200/50 reveal">
           <div className="text-center mb-8 sm:mb-10">
-            <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.4em] block mb-4">
+            <span className="text-[11px] font-black text-red-600 uppercase tracking-[0.4em] block mb-4">
               GET IN TOUCH
             </span>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-4 sm:mb-6">

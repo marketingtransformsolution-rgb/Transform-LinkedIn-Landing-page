@@ -14,7 +14,7 @@ const painPoints = [
     description: "Slow annotation vendors create data debt, preventing your engineering team from shipping updates at the pace required by the market."
   },
   {
-    icon: <Users className="w-8 h-8 text-blue-500" />,
+    icon: <Users className="w-8 h-8 text-red-500" />,
     heading: "Internal teams overloaded with manual QA",
     description: "When your best data scientists spend 40% of their time fixing labels, innovation stops. We handle the heavy lifting with precision."
   },

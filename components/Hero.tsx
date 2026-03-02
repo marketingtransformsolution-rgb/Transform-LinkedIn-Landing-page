@@ -33,9 +33,9 @@ const Hero: React.FC = () => {
           {/* Left Column: Text Content */}
           <div className="space-y-4 sm:space-y-6 lg:space-y-7 text-center lg:text-left">
             <div className="reveal" style={{ transitionDelay: '0.1s' }}>
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 mb-3 sm:mb-4">
-                <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span>
-                <span className="text-[9px] sm:text-[10px] font-black text-blue-700 uppercase tracking-widest">Scale Your ML Pipelines</span>
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-50 border border-red-100 mb-3 sm:mb-4">
+                <span className="w-2 h-2 rounded-full bg-red-600 animate-pulse"></span>
+                <span className="text-[9px] sm:text-[10px] font-black text-red-700 uppercase tracking-widest">Scale Your ML Pipelines</span>
               </div>
               <h1 className="text-2xl sm:text-3xl md:text-[2.25rem] lg:text-[2.6rem] xl:text-5xl font-extrabold tracking-tight leading-[1.1] text-slate-900">
                 Are your AI models slowing down because training data cannot keep up?
@@ -52,7 +52,7 @@ const Hero: React.FC = () => {
                   href="https://www.transformsolution.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-600 font-bold uppercase tracking-wide hover:underline decoration-2 underline-offset-4"
+                  className="text-red-600 font-bold uppercase tracking-wide hover:underline decoration-2 underline-offset-4"
                 >
                   TRANSFORM
                 </a> delivers high-precision Human-in-the-Loop data annotation built to bring accuracy and scale to production AI teams.
@@ -61,7 +61,7 @@ const Hero: React.FC = () => {
               <div className="pt-1 sm:pt-2 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start items-center">
                 <button
                   onClick={handleScrollToContact}
-                  className="w-full sm:w-auto h-12 sm:h-14 px-8 sm:px-10 bg-blue-600 hover:bg-blue-700 text-white text-sm sm:text-base font-bold rounded-xl shadow-xl shadow-blue-100 transition-all transform hover:scale-105 active:scale-95"
+                  className="w-full sm:w-auto h-12 sm:h-14 px-8 sm:px-10 bg-red-600 hover:bg-red-700 text-white text-sm sm:text-base font-bold rounded-xl shadow-xl shadow-red-100 transition-all transform hover:scale-105 active:scale-95"
                 >
                   Start Your Pilot Project
                 </button>
@@ -90,7 +90,7 @@ const Hero: React.FC = () => {
 
               {/* Bottom Stats Badge */}
               <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-white px-8 py-4 rounded-2xl shadow-xl border border-slate-100 z-30">
-                <p className="text-3xl font-black text-blue-600 text-center">50M+</p>
+                <p className="text-3xl font-black text-red-600 text-center">50M+</p>
                 <p className="text-[10px] text-slate-400 font-bold uppercase tracking-widest text-center mt-1">Annotations Delivered</p>
               </div>
             </div>

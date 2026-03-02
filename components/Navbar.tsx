@@ -113,10 +113,10 @@ const Navbar: React.FC = () => {
                         {/* Solutions */}
                         <button
                             onClick={() => scrollToSection('solutions')}
-                            className="text-sm font-bold text-slate-700 hover:text-blue-600 transition-colors uppercase tracking-wide relative group"
+                            className="text-sm font-bold text-slate-700 hover:text-red-600 transition-colors uppercase tracking-wide relative group"
                         >
                             Solutions
-                            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full" />
+                            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-red-600 transition-all duration-300 group-hover:w-full" />
                         </button>
 
                         {/* Services dropdown */}
@@ -126,12 +126,12 @@ const Navbar: React.FC = () => {
                         >
                             <button
                                 onClick={() => setIsServicesOpen(!isServicesOpen)}
-                                className={`flex items-center gap-1.5 text-sm font-bold uppercase tracking-wide relative group transition-colors duration-200 ${isServicesOpen ? 'text-blue-600' : 'text-slate-700 hover:text-blue-600'
+                                className={`flex items-center gap-1.5 text-sm font-bold uppercase tracking-wide relative group transition-colors duration-200 ${isServicesOpen ? 'text-red-600' : 'text-slate-700 hover:text-red-600'
                                     }`}
                             >
                                 Services
                                 <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isServicesOpen ? 'rotate-180' : ''}`} />
-                                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full" />
+                                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-red-600 transition-all duration-300 group-hover:w-full" />
                             </button>
 
                             {isServicesOpen && (
@@ -147,16 +147,16 @@ const Navbar: React.FC = () => {
                                                 <button
                                                     key={svc.href}
                                                     onClick={() => { navigate(svc.href); setIsServicesOpen(false); }}
-                                                    className={`w-full flex items-start gap-3 p-3 rounded-xl transition-all duration-200 text-left group ${isActive ? 'bg-blue-50' : 'hover:bg-slate-50'
+                                                    className={`w-full flex items-start gap-3 p-3 rounded-xl transition-all duration-200 text-left group ${isActive ? 'bg-red-50' : 'hover:bg-slate-50'
                                                         }`}
                                                 >
-                                                    <div className={`w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0 transition-colors duration-200 ${isActive ? 'bg-blue-600' : 'bg-blue-50 group-hover:bg-blue-600'
+                                                    <div className={`w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0 transition-colors duration-200 ${isActive ? 'bg-red-600' : 'bg-red-50 group-hover:bg-red-600'
                                                         }`}>
-                                                        <Icon className={`w-4 h-4 transition-colors duration-200 ${isActive ? 'text-white' : 'text-blue-600 group-hover:text-white'
+                                                        <Icon className={`w-4 h-4 transition-colors duration-200 ${isActive ? 'text-white' : 'text-red-600 group-hover:text-white'
                                                             }`} />
                                                     </div>
                                                     <div>
-                                                        <p className={`text-sm font-bold leading-tight ${isActive ? 'text-blue-600' : 'text-slate-900'}`}>
+                                                        <p className={`text-sm font-bold leading-tight ${isActive ? 'text-red-600' : 'text-slate-900'}`}>
                                                             {svc.label}
                                                         </p>
                                                         <p className="text-xs text-slate-500 mt-0.5 leading-snug">{svc.desc}</p>
@@ -174,16 +174,16 @@ const Navbar: React.FC = () => {
                             <button
                                 key={item.id}
                                 onClick={() => scrollToSection(item.id)}
-                                className="text-sm font-bold text-slate-700 hover:text-blue-600 transition-colors uppercase tracking-wide relative group"
+                                className="text-sm font-bold text-slate-700 hover:text-red-600 transition-colors uppercase tracking-wide relative group"
                             >
                                 {item.label}
-                                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full" />
+                                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-red-600 transition-all duration-300 group-hover:w-full" />
                             </button>
                         ))}
 
                         <button
                             onClick={() => scrollToSection('contact-section')}
-                            className="px-6 py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg shadow-md hover:shadow-xl transition-all duration-200 transform hover:scale-105 active:scale-95"
+                            className="px-6 py-2.5 bg-red-600 hover:bg-red-700 text-white font-bold rounded-lg shadow-md hover:shadow-xl transition-all duration-200 transform hover:scale-105 active:scale-95"
                         >
                             Get Started
                         </button>
@@ -205,7 +205,7 @@ const Navbar: React.FC = () => {
 
                             <button
                                 onClick={() => scrollToSection('solutions')}
-                                className="text-left px-4 py-3 text-sm font-bold text-slate-700 hover:text-blue-600 hover:bg-slate-50 rounded-lg transition-all uppercase tracking-wide"
+                                className="text-left px-4 py-3 text-sm font-bold text-slate-700 hover:text-red-600 hover:bg-slate-50 rounded-lg transition-all uppercase tracking-wide"
                             >
                                 Solutions
                             </button>
@@ -214,22 +214,22 @@ const Navbar: React.FC = () => {
                             <div>
                                 <button
                                     onClick={() => setIsServicesOpen(!isServicesOpen)}
-                                    className="w-full flex items-center justify-between px-4 py-3 text-sm font-bold text-slate-700 hover:text-blue-600 hover:bg-slate-50 rounded-lg transition-all uppercase tracking-wide"
+                                    className="w-full flex items-center justify-between px-4 py-3 text-sm font-bold text-slate-700 hover:text-red-600 hover:bg-slate-50 rounded-lg transition-all uppercase tracking-wide"
                                 >
                                     Services
                                     <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isServicesOpen ? 'rotate-180' : ''}`} />
                                 </button>
                                 {isServicesOpen && (
-                                    <div className="ml-4 mt-1 border-l-2 border-blue-100 pl-4 space-y-1 mb-2">
+                                    <div className="ml-4 mt-1 border-l-2 border-red-100 pl-4 space-y-1 mb-2">
                                         {subServices.map((svc) => {
                                             const Icon = svc.icon;
                                             return (
                                                 <button
                                                     key={svc.href}
                                                     onClick={() => navigate(svc.href)}
-                                                    className="w-full flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-blue-50 transition-colors text-left"
+                                                    className="w-full flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-red-50 transition-colors text-left"
                                                 >
-                                                    <Icon className="w-4 h-4 text-blue-600 flex-shrink-0" />
+                                                    <Icon className="w-4 h-4 text-red-600 flex-shrink-0" />
                                                     <span className="text-sm font-semibold text-slate-800">{svc.label}</span>
                                                 </button>
                                             );
@@ -242,7 +242,7 @@ const Navbar: React.FC = () => {
                                 <button
                                     key={item.id}
                                     onClick={() => scrollToSection(item.id)}
-                                    className="text-left px-4 py-3 text-sm font-bold text-slate-700 hover:text-blue-600 hover:bg-slate-50 rounded-lg transition-all uppercase tracking-wide"
+                                    className="text-left px-4 py-3 text-sm font-bold text-slate-700 hover:text-red-600 hover:bg-slate-50 rounded-lg transition-all uppercase tracking-wide"
                                 >
                                     {item.label}
                                 </button>
@@ -251,7 +251,7 @@ const Navbar: React.FC = () => {
                             <div className="px-4 mt-2">
                                 <button
                                     onClick={() => scrollToSection('contact-section')}
-                                    className="w-full px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg shadow-md transition-all"
+                                    className="w-full px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-bold rounded-lg shadow-md transition-all"
                                 >
                                     Get Started
                                 </button>
