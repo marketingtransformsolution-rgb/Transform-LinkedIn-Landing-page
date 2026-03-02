@@ -87,7 +87,7 @@ const TrustStrip: React.FC = () => {
           {/* Card 1 */}
           <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-slate-100 reveal flex flex-col items-center text-center transition-transform hover:-translate-y-1" style={{ transitionDelay: '0.1s' }}>
             <div className="text-3xl sm:text-4xl lg:text-5xl font-black text-red-600 mb-2">
-              <Counter end={100} suffix="mn+" />
+              <Counter end={100} suffix="k+" />
             </div>
             <div className="text-[10px] sm:text-xs font-black text-slate-400 uppercase tracking-widest">Data points</div>
           </div>

@@ -128,6 +128,11 @@ const GISMappingPage: React.FC = () => {
     const [dialogOpen, setDialogOpen] = useState(false);
 
     useEffect(() => {
+        document.title = "GIS Mapping & Geospatial Data Services | TRANSFORM";
+        const metaDesc = document.querySelector('meta[name="description"]');
+        if (metaDesc) {
+            metaDesc.setAttribute("content", "Expert GIS mapping and geospatial data annotation. We provide accurate vectorization, feature extraction, and map maintenance services.");
+        }
         window.scrollTo(0, 0);
         const observer = new IntersectionObserver(
             (entries) => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('reveal-active'); }),

@@ -140,6 +140,11 @@ const ImageVideoAnnotationPage: React.FC = () => {
 
     /* re-run scroll-reveal observer on mount */
     useEffect(() => {
+        document.title = "Image & Video Annotation Services | TRANSFORM";
+        const metaDesc = document.querySelector('meta[name="description"]');
+        if (metaDesc) {
+            metaDesc.setAttribute("content", "High-precision image and video annotation services for computer vision. Experts in bounding boxes, polygons, and semantic segmentation.");
+        }
         window.scrollTo(0, 0);
         const observer = new IntersectionObserver(
             (entries) => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('reveal-active'); }),

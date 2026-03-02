@@ -141,6 +141,11 @@ const LiDARAnnotationPage: React.FC = () => {
     const [dialogOpen, setDialogOpen] = useState(false);
 
     useEffect(() => {
+        document.title = "LiDAR & 3D Sensor Annotation Services | TRANSFORM";
+        const metaDesc = document.querySelector('meta[name="description"]');
+        if (metaDesc) {
+            metaDesc.setAttribute("content", "Professional LiDAR data labeling and 3D point cloud annotation for autonomous vehicles and robotics. High-accuracy sensor fusion experts.");
+        }
         window.scrollTo(0, 0);
         const observer = new IntersectionObserver(
             (entries) => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('reveal-active'); }),

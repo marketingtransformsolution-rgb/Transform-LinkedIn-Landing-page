@@ -86,6 +86,13 @@ const useRevealObserver = () => {
 
 const HomePage: React.FC = () => {
   useRevealObserver();
+  useEffect(() => {
+    document.title = "TRANSFORM | Enterprise AI Data Annotation & Human-in-the-Loop Services";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute("content", "Boost AI model accuracy with TRANSFORM's expert data annotation. We provide scalable Image, Video, LiDAR, and NLP labeling services with human-in-the-loop validation.");
+    }
+  }, []);
   return (
     <>
       <Hero />
